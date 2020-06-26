@@ -25,7 +25,7 @@ SECRET_KEY = 'cn0(v3%!x#f=(=h)h(ng45f!twtcrk=$f)k%fe3x5nr51(3j4h'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['bloomboxkjsce.herokuapp.com','127.0.0.1','bloombokjsce.com']
 
 
 # Application definition
@@ -43,6 +43,7 @@ INSTALLED_APPS = [
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
+    'whitenoise.middleware.WhiteNoiseMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
     'django.middleware.csrf.CsrfViewMiddleware',
@@ -125,7 +126,7 @@ STATIC_ROOT=os.path.join(BASE_DIR,'assets')
 STATICFILES_DIRS=[
     os.path.join(BASE_DIR,'static')
 ]
-
+STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 MEDIA_ROOT=os.path.join(BASE_DIR,'media')
 MEDIA_URL='/media/'
 
