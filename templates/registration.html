@@ -1,0 +1,185 @@
+<!-- Required meta tags -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+
+<!--CSS-->
+<link href="../static/styles/basic/preloader.css" rel="stylesheet"  />
+<link href="../static/styles/basic/aos.css" rel="stylesheet"  />
+<link href="../static/styles/basic/bootstrap.min.css" rel="stylesheet">
+<link href="../static/styles/basic/icofont/icofont.min.css" rel="stylesheet">
+<link href="../static/styles/basic/boxicons/css/boxicons.min.css" rel="stylesheet">
+<link href="../static/styles/basic/owl.carousel.min.css" rel="stylesheet">
+
+<style>
+    .section-title {
+          text-align: center;
+          padding-bottom: 50px;
+      }
+      
+      .section-title h2 {
+          font-size: 17px;
+          letter-spacing: 1px;
+          font-weight: 700;
+          padding: 8px 20px;
+          margin: 0;
+          background: #ccebff;
+          color: blue;
+          display: inline-block;
+          text-transform: uppercase;
+          border-radius: 50px; 
+      }
+
+      .section-title p {
+          margin: 15px auto 0 auto;
+          font-weight: 500;
+          color: #919191;
+      }
+
+    .btn{
+        font-family: "Raleway", sans-serif;
+        background-color: #ccebff;
+        color: black;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px 10px;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        
+    }
+
+    .btn:hover {
+        background: #0099ff;
+    }
+
+    @media only screen and (max-width:768px){
+        body {
+            background-image: none !important;
+        }
+
+        .row>div{
+            left:0 !important;
+        }
+
+    }
+</style>
+<body style="background-image:url('../media/images/events/registration-background.jpeg');background-size: contain;" onload="preloader();">
+    <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+        <span class="loader">
+            <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+        </span>
+    </div>
+<form id="form" method="POST" action="/registration/{{event.title}}">
+    {% csrf_token %}
+
+    
+    <div class="section-title" style="margin-top: 30px;">
+        <h2>Event: {{event.title}}</h2>
+        <p>Registering For Event</p>
+    </div>
+    
+
+    {% if event.eventType == 'Hackathon' %}
+
+    <div class='container'>
+        <div class='row'>
+            <div class='col-xl-6 col-md-6 col-sm-12' style="zoom:80%;left:-30px;">
+                <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;" >
+                    <form>
+                        <div class="form-group form-group-inline">
+                        <label for="leaderName">Group Leader Name:</label>
+                        <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." >
+                        </div>
+                        <div class="form-group">
+                        <label for="leaderEmail">Group Leader Email:</label>
+                        <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp">
+                        </div>
+                        <div class="form-group">
+                            <label for="leaderContact">Group Leader Contact:</label>
+                            <input type="number" class="form-control" id="leaderContact" name="leaderContact" placeholder="9999999999">
+                        </div>
+                        <div class="form-group">
+                            <label for="Hcollege">College Name:</label>
+                            <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name...">
+                        </div>
+                        <div class="form-group">
+                            <label for="noOfMembers">No of Team Members:</label>
+                            <input type="number" class="form-control" id="noOfMembers" name="noOfMembers" placeholder="">
+                        </div>
+                        <div class="form-group">
+                            <label for="nameOfMembers">Name of Team Members:</label>
+                            <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated...">
+                        </div>
+                        <div class='d-flex justify-content-center'>
+                            <button  type="submit" class="btn btn-seemore ">Register</button>
+                            <button type='reset' class='btn'>Reset</button>
+                        </div>
+                        
+                    </form>
+                </div>
+            </div>
+
+           <!-- <div class='col-xl-6 col-md-6 col-sm-12'>
+                <img class='col-xl-12 col-md-12 col-sm-12' src='../media/images/basic/register.png'>
+            </div> -->
+        </div>
+    </div>
+        
+    {% else %}
+        
+        <div class='container'>
+            <div class='row'>
+                <div class='col-xl-6 col-md-6 col-sm-12'>
+                    <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;">
+                        <form>
+                            <div class="form-group form-group-inline">
+                            <label for="name">Name:</label>
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter Name..." >
+                            </div>
+                            <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input class="form-control" id="email" name="email" type="email" placeholder="abc@example.com" aria-describedby="emailHelp">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input class="form-control" id="contact" name="contact" type="number" placeholder="9999999999">
+                            </div>
+                            <div class="form-group">
+                                <label for="college">College:</label>
+                                <input class="form-control" id="college" name="college" type="text" placeholder="Enter College Name...">
+                            </div>
+                            <div class="form-group">
+                                <label for="branch">Branch:</label>
+                                <select class="form-control" id="branch" name="branch" type="text" >
+                                <option value='none' selected disabled hidden>Select Your Branch</option>
+                                <option value='COMPS'>COMPS</option>
+                                <option value='ETRX'>ETRX</option>
+                                <option value='EXTC'>EXTC</option>
+                                <option value='IT'>IT</option>
+                                <option value='MECH'>MECH</option>
+                                </select>
+                            </div>
+                            
+                            <div class='d-flex justify-content-center'>
+                                <button  type="submit" class="btn btn-seemore ">Register</button>
+                                <button type='reset' class='btn'>Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class='col-xl-6 col-md-6 col-sm-12'>
+                    <img class='col-xl-12 col-md-12 col-sm-12' src='../media/images/basic/register.png'>
+                </div>
+
+            </div>
+        </div>
+                
+    {% endif %}
+    <br>
+</form>
+</body>

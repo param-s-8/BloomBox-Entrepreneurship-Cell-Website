@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-142291179-2');
+        </script>
+        <title>BloomBox, E-Cell KJSCE</title>
+        <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png">
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+        <meta name="description" content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+        <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+        <meta name="keywords" content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+        <meta name="robots" content="INDEX, FOLLOW">
+        <meta name="author" content="Team BloomBox">
+        <meta name="geo.region" content="IN">
+        <link rel="canonical" href="">
+        
+        <!--CSS-->
+        <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+
+        <!-- Template Main CSS File -->
+        <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+    </head>
+    <body onload="preloader();">
+
+
+
+        <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+            <span class="loader">
+                <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+            </span>
+        </div>
+
+
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container">
+                <a href="{% url 'index' %}" class="hero-logo" data-aos="zoom-in">
+                    <img class='img-fluid' src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Home.png" alt="">
+                </a>
+                <h1 data-aos="zoom-in">Bloombox, Entrepreneurship Cell</h1>
+                <h2 data-aos="fade-up">
+                    <i class="icofont-quote-left"></i>
+                    <b style='font-weight: 800; font-size: x-large;'>Innovate Today To Lead Tommorow</b>
+                    <i class="icofont-quote-right"></i>
+                </h2>
+                <a data-aos="fade-up" href="{% url 'events' %}" class="btn-get-started scrollto">Regsiter For Event</a>
+            </div>
+        </section>
+        <!-- End Hero -->
+        <!-- ======= Header ======= -->
+        <header id="header" class="d-flex align-items-center">
+            <div class="container">
+                <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+                <div class="logo d-block d-lg-none">
+                    <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+                </div>
+                <nav class="nav-menu d-none d-lg-block">
+                    <ul class="nav-inner">
+                        
+                        <li class="active"><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
+                        <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                        <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                        <li><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li>
+                        <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                        <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                        <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                    </ul>
+                </nav>
+            <!--nav-menu -->
+            </div>
+        </header>
+        <!-- End Header -->
+        <br>
+
+
+    <!-- ======= Events Section ======= -->
+    <section id="event" class="event">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Events</h2>
+                <p>We conduct various Events throughout the year, to hone talent.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="tab-content">
+                        <div class="tab-pane active show">
+                            <!--By Default Image-->
+                            <figure>
+                                <img src="../media/images/index/events/background - Copy.jpg" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-1">
+                            <figure>
+                                <img src="../media/images/index/events/workshop.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-2">
+                            <figure>
+                                <img src="../media/images/index/events/panel.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-3">
+                            <figure>
+                                <img src="../media/images/index/events/hackathon.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                        <div class="tab-pane" id="tab-4">
+                            <figure>
+                                <img src="../media/images/index/events/funLearning.png" alt="" class="img-fluid">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 mt-4 mt-lg-0" data-aos="fade-left">
+                    <ul class="nav nav-tabs flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link show" data-toggle="tab" href="#tab-1">
+                                <h4>Hands On Workshops</h4>
+                                <p>Young innovators can have real time experience to enriching their entrepreneurship capabilities.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" data-toggle="tab" href="#tab-2">
+                                <h4>Panel Sessions</h4>
+                                <p>Real life field-specific expert guidance via interactive sessions which provide powerful insights to the students.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" data-toggle="tab" href="#tab-3">
+                                <h4>Hackathon</h4>
+                                <p>Students compete real time amongst themselves which ignites the competitive spirit among them and polishes their competency.</p>
+                            </a>
+                        </li>
+                        <li class="nav-item mt-2">
+                            <a class="nav-link" data-toggle="tab" href="#tab-4">
+                                <h4>Fun Learning</h4>
+                                <p>Engaging and intriguing events help young entrepreneurship enthusiasts to learn the adequate skills required.</p>
+                            </a>
+                        </li>
+                    </ul>
+                    <br>
+                    <a href="{% url 'events' %}">
+                        <button type="button" class="btn btn-seemore ">See More</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End Events Section -->
+    <!-- ======= Campus Company Section ======= -->
+    <section id="campComp" class="campComp">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Campus Companies</h2>
+                <p>We help business minds at our campus, turn their ideas into reality</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 order-2 order-lg-1">
+                    <div class="icon-box mt-5 mt-lg-0" data-aos="fade-up">
+                        <img src="../media/images/campus-company/cc-logos/Nurturing_Lives.jpg" alt='Nurturing Lives'>
+                        <!-- <i class="bx bx-receipt"></i> -->
+                        <h4>Nurturing Lives</h4>
+                        <p>NGO focusing on betterment of orphan children by providing food, books, gifts, etc</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="100">
+                        <img src="../media/images/campus-company/cc-logos/G3_MKfPKAO.jpg" alt='G3'>
+                        <h4>G3</h4>
+                        <p>Active Deals with designing and printing</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="200">
+                        <img src="../media/images/campus-company/cc-logos/Tech_It_In.jpg" alt='Tech It In'>
+                        <h4>Tech It In</h4>
+                        <p>Project guidance, Workshops and Provision of Electronic components for Engineering projects</p>
+                    </div>
+                    <div class="icon-box mt-5" data-aos="fade-up" data-aos-delay="300">
+                        <img src="../media/images/campus-company/cc-logos/Tool_Trunk.jpg" alt="Tool Trunk">
+                        <h4>Tool Trunk</h4>
+                        <p>Provision of workshop tools to First Year students</p>
+                    </div>
+                    <br>
+                    <a href="{% url 'campus' %}">
+                        <button data-aos="fade-up" type="button" class="btn btn-seemore ">See More</button>
+                    </a>
+                </div>
+                <div
+                    class="image col-lg-6 order-1 order-lg-2"
+                    style='background-image: url("../media/images/campus-company/cc-background-1.jpg");'
+                    data-aos="fade-left"
+                    data-aos-delay="100"
+                ></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Campus Company Section -->
+    <br>
+    <br>
+    <br>
+    <!-- ======= sponsors Section ======= -->
+    <section id="sponsors" class="sponsors">
+        <div class="container">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Our Partners</h2>
+                <p>With their unwavering support we execute Events, garner talent & create Entrepreneurs.</p>
+            </div>
+            <div class="row">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
+                    <img src="../media/images/sponsors/CampBuddy.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
+                    <img src="../media/images/sponsors/CodingBlocks.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="../media/images/sponsors/Fyntune.png" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="300">
+                    <img src="../media/images/sponsors/redbull.png" class="img-fluid" alt="">
+                </div>
+            </div>
+            <br>
+            <a href="{% url 'partners' %}">
+                <button type="button" class="btn btn-seemore ">See More</button>
+            </a>
+        </div>
+    </section>
+    <!-- End sponsors Section -->
+    <!-- ======= faculty Section ======= -->
+    <section id="faculty" class="faculty">
+        <div class="container">
+            <div class="section-title">
+                <h2>faculty Co-ordinators & Advisor</h2>
+                <h3>
+                    Our
+                    <span>Guiding Light</span>
+                </h3>
+                <!-- <p>Ut possimus qui ut temporibus culpa velit eveniet modi omnis est adipisci expedita at voluptas atque vitae autem.</p> -->
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-xl-10">
+                    <div class="row">
+                        <div class="col-xl-4 col-lg-4 col-md-6">
+                            <div class="member">
+                                <img src="../media/images/index/inderjitsingh.jfif" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Prof. Inderjit Singh Dhanjal</h4>
+                                        <span>KJSCE</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="mailto:inderjitsingh@somaiya.edu">
+                                            <i class="icofont-email"></i>
+                                        </a>
+                                        <a href="https://kjsce.somaiya.edu/en/view-member/160996?type=faculty">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Member Item -->
+                        <div class="col-xl-4 col-lg-4 col-md-6" data-wow-delay="0.1s">
+                            <div class="member">
+                                <img src="../media/images/index/sagarkorde.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Prof. Sagar Korde</h4>
+                                        <span>KJSCE</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="mailto:sagar.korde@somaiya.edu">
+                                            <i class="icofont-email"></i>
+                                        </a>
+                                        <a href="https://kjsce.somaiya.edu/en/view-member/160925?type=faculty">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Member Item -->
+                        <div class="col-xl-4 col-lg-4 col-md-6" data-wow-delay="0.2s">
+                            <div class="member">
+                                <img src="../media/images/index/hetal maam.jpg" class="img-fluid" alt="">
+                                <div class="member-info">
+                                    <div class="member-info-content">
+                                        <h4>Mrs. Hetal Mundra</h4>
+                                        <span>Riidl</span>
+                                    </div>
+                                    <div class="social">
+                                        <a href="mailto:hetaldoshi@somaiya.edu">
+                                            <i class="icofont-email"></i>
+                                        </a>
+                                        <a href="https://in.linkedin.com/in/hetal-mundra">
+                                            <i class="icofont-linkedin"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Member Item -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End faculty Section -->
+    <!-- ======= quotes Section ======= -->
+    <section id="quotes" class="quotes">
+        <div class="container" data-aos="zoom-in">
+            <div class="section-title" data-aos="fade-up">
+                <h2>Great Minds</h2>
+                <p>Often little sentences have deepest meanings.</p>
+            </div>
+            <div class="owl-carousel quotes-carousel">
+                <div class="quote-item">
+                    <img src="../media/images/index/quotes/Mark.jpg" class="quote-img" alt="">
+                    <h3>Mark Zukerberg</h3>
+                    <h4>CEO: Facebook</h4>
+                    <p>
+                        <i class="icofont-quote-left"></i>
+                        The biggest risk is not taking any risk
+                        <i class="icofont-quote-right"></i>
+                    </p>
+                </div>
+                <div class="quote-item">
+                    <img src="../media/images/index/quotes/Warren_Buffett.jpg" class="quote-img" alt="">
+                    <h3>Warren Buffett</h3>
+                    <h4>CEO: Berkshire Hathaway</h4>
+                    <p>
+                        <i class="icofont-quote-left"></i>
+                        Always be competing
+                        <i class="icofont-quote-right"></i>
+                    </p>
+                </div>
+                <div class="quote-item">
+                    <img src="../media/images/index/quotes/Walt_Disney.jpg" class="quote-img" alt="">
+                    <h3>Walt Disney</h3>
+                    <h4>The Walt Disney Company</h4>
+                    <p>
+                        <i class="icofont-quote-left"></i>
+                        Its kind of fun to do the impossible
+                        <i class="icofont-quote-right"></i>
+                    </p>
+                </div>
+                <div class="quote-item">
+                    <img src="../media/images/index/quotes/Jack_Ma.jpg" class="quote-img" alt="">
+                    <h3>Jack Ma</h3>
+                    <h4>Co-Founder: Alibaba Group</h4>
+                    <p>
+                        <i class="icofont-quote-left"></i>
+                        In carrying out e-commerce, the most important thing is to keep doing what you are doing right now with passion, to keep it up
+                        <i class="icofont-quote-right"></i>
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- End quotes Section -->
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
+                                    <br><br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3>Follow Us</h3>
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="credits">
+                Designed by<a href="#"> BloomBox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <!--Check if site works without this-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/validate.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+</body>
+</html>

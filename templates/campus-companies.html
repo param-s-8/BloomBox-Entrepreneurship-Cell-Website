@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <title>BloomBox, E-Cell KJSCE</title>
+    <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description"
+        content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords"
+        content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <link rel="canonical" href="">
+    
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+
+    <!-- Template Main CSS File -->    
+    <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/campus-companies.css' %}" rel="stylesheet">
+      
+</head>
+
+<body onload="preloader();">
+
+
+
+    <div class="wrapper-loader" id="loader" style="height:100vh;width:100%;">
+        <span class="loader">
+            <img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+        </span>
+    </div>
+
+
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
+                    <li class="active"><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                    <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                    <li><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li>
+                    <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                    <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                    <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                </ul>
+            </nav>
+        <!--nav-menu -->
+        </div>
+    </header>
+    <!-- End Header -->
+    <br>
+    <div class="section-title">
+        <h2>Campus Companies</h2>
+        <p>We help business minds at our campus, turn their ideas into reality</p>
+    </div>
+
+    <div class='container-fluid companies'>
+        <div class='row'>
+            {% for company in companies %}
+            <!--Company Card-->
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
+                <div class='event-content'>
+                    <div class='row'>
+                        <div class='col-md-4 col-lg-3'>
+                            <div class='event-photo'>
+                                <div class='event-photo-container'>
+                                    <div class='event-photo-main'>
+                                        <img class="imageTop" src="{{ company.image.url }}" alt="green apple slice">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class='col-lg-9 col-md-8'>
+                            <div class='event-info'>
+                                <div class='event-title'>
+                                    <h1>{{ company.name }}</h1>
+                                </div>
+                                <div class="description">
+                                    <div class="desc-content">{{company.description}}</div>
+                                    <br>
+                                    <div class="student"><b>Students:</b><br>
+                                    <span>{{company.students}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Company Card Ends-->
+            {% endfor %}
+        </div>
+      </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
+                                    <br><br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3>Follow Us</h3>
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="credits">
+                Designed by<a href="#"> BloomBox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
+
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+    <!--Check if site works without this-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/validate.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+</body>
+
+</html>
