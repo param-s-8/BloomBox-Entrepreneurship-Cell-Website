@@ -1,1 +1,1 @@
-web: gunicorn bb.wsgi --log-file -
+web: gunicorn bloombox.wsgi --log-file -
