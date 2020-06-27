@@ -247,7 +247,10 @@ section .section-title {
         margin:10px;
     }
     .backside{
-        width:305px;
+        width:270px;
+    }
+    .backside .card-body{
+        width: 270px;
     }
 
 }
