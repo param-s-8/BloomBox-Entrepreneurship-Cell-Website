@@ -42,7 +42,7 @@ class EventRegistrations(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrations")
     name=models.CharField(max_length=100)
     email=models.EmailField()
-    contact=models.IntegerField()
+    contact=models.CharField(max_length=50)
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     branch=models.CharField(max_length=100)
     
@@ -50,7 +50,7 @@ class EventRegistrationsHackathon(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrationsHackathon")
     leaderName=models.CharField(max_length=100)
     leaderEmail=models.EmailField()
-    leaderContact=models.IntegerField()
+    leaderContact=models.CharField(max_length=50)
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     noOfMembers=models.IntegerField()
     nameOfMembers=models.TextField()
@@ -71,5 +71,5 @@ class Team(models.Model):
 class Message(models.Model):     #about us
     name=models.CharField(max_length=255)
     email=models.EmailField()
-    contact=models.IntegerField()
+    contact=models.CharField(max_length=15)
     message=models.TextField()
