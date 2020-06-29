@@ -5,7 +5,7 @@ from django.conf import settings
 
 urlpatterns = [
     path('', views.index,name="index"),
-    #path('index.html', views.index,name="index"),
+    path('index.html', views.index,name="index"),
     path('campus',views.campus,name="campus"),
     path('events',views.events,name="events"),
     path('registration/<str:event>',views.registration,name="registration"),
