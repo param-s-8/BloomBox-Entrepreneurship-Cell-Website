@@ -11,7 +11,7 @@ def index(request):
     return render(request,"index.html")
 
 def campus(request):
-    companies=Campus.objects.all()
+    companies=Campus.objects.all().order_by("name")
     context={'companies':companies}
     return render(request,"campus-companies.html",context)
 
