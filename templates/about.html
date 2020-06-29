@@ -251,11 +251,11 @@
                                 {% csrf_token %}
                                 <div>
                                     <p>Name</p>
-                                    <input class="col2 first" type="text" id="name" name="name" placeholder="Your name">
+                                    <input class="col2 first" type="text" id="name" name="name" placeholder="Your name" required>
                                 </div>
                                 <div>
                                     <p>Email</p>
-                                    <input class="col2 first" type="email" id="email" name="email" placeholder="Your email">
+                                    <input class="col2 first" type="email" id="email" name="email" placeholder="Your email" required>
                                 </div>
                                 <div>
                                     <p>Contact Number</p>
@@ -263,7 +263,7 @@
                                 </div>
                                 <div>
                                     <p>Message</p>
-                                    <textarea name="textarea" id="textarea" placeholder="Your message here..." height="50"></textarea>
+                                    <textarea name="textarea" id="textarea" placeholder="Your message here..." height="50" required></textarea>
                                 </div>
                                 <div class="text-center">
                                     <button  type="submit" class="btn btn-seemore" style="padding: 10px;">Submit</button>
