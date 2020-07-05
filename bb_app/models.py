@@ -27,10 +27,10 @@ class Events(models.Model):
     date=models.DateField(help_text = "Please use the following format: <em>YYYY-MM-DD</em>.")
     details=models.TextField()
     eventType=models.CharField(max_length=13, choices=TYPE_CHOICES, default="Panel Session")
-    deadline=models.DateField(help_text = "Please use the following format: <em>YYYY-MM-DD</em>.")
+    deadline=models.DateTimeField(default=datetime.now(),help_text = "Please use the following format: <em>YYYY-MM-DD</em>.")
     def is_active(self):
         IST=pytz.timezone('Asia/Kolkata')
-        today=datetime.now(IST).date()
+        today=datetime.now(IST)
         return self.deadline > today
 
 class EventImages(models.Model):
