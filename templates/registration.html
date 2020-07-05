@@ -68,7 +68,7 @@
 
     }
 </style>
-<body style="background-image:url('../media/images/events/registration-background.jpeg');background-size: contain;" onload="preloader();">
+<body style="background-image:url('../media/images/events/registration-background.jpeg');background-size: cover; background-repeat: no-repeat;" onload="preloader();">
     
 <form id="form" method="POST" action="/registration/{{event.title}}">
     {% csrf_token %}
@@ -97,7 +97,7 @@
                         </div>
                         <div class="form-group">
                             <label for="leaderContact">Group Leader Contact:</label>
-                            <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
                         </div>
                         <div class="form-group">
                             <label for="Hcollege">College Name:</label>
@@ -143,7 +143,7 @@
                             </div>
                             <div class="form-group">
                                 <label for="contact">Contact:</label>
-                                <input class="form-control" id="contact" name="contact" type="tel" placeholder="enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                                <input class="form-control" id="contact" name="contact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
                             </div>
                             <div class="form-group">
                                 <label for="college">College:</label>
