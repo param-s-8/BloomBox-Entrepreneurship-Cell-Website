@@ -99,7 +99,10 @@
                         <div class='col-lg-9 col-md-8'>
                             <div class='event-info'>
                                 <div class='event-title'>
-                                    <h1>{{ company.name }}</h1>
+                                    <h1>{{ company.name }}{% if company.name in active_companies %}
+                                        <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
+                                        box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-success">Active</span>
+                                        {% endif %}</h1>
                                 </div>
                                 <div class="description">
                                     <div class="desc-content">{{company.description}}</div>

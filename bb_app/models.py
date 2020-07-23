@@ -44,6 +44,7 @@ class EventRegistrations(models.Model):
     contact=models.CharField(max_length=50)
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     branch=models.CharField(max_length=100)
+    year=models.CharField(max_length=2, default="TY")
     
 class EventRegistrationsHackathon(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrationsHackathon")

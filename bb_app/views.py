@@ -12,7 +12,8 @@ def index(request):
 
 def campus(request):
     companies=Campus.objects.all().order_by("name")
-    context={'companies':companies}
+    active_companies=["Nurturing Lives"]
+    context={'companies':companies,'active_companies':active_companies}
     return render(request,"campus-companies.html",context)
 
 def events(request):
@@ -42,7 +43,8 @@ def registration(request,event):
             contact=request.POST["contact"]
             college=request.POST["college"]
             branch=request.POST["branch"]
-            var=EventRegistrations.objects.create(title=eve,name=name,email=email,contact=contact,college=college,branch=branch)
+            year=request.POST["year"]
+            var=EventRegistrations.objects.create(title=eve,name=name,email=email,contact=contact,college=college,branch=branch,year=year)
             var.save()
         '''eventlist=Events.objects.exclude(title=event)
         activeEvents=[eve for eve in eventlist if eve.is_active()]
