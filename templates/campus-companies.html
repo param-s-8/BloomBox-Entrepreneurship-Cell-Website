@@ -83,6 +83,7 @@
         <div class='row'>
             {% for company in companies %}
             <!--Company Card-->
+            {% if company.name in active_companies %}
             <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
                 <div class='event-content'>
                     <div class='row'>
@@ -99,10 +100,10 @@
                         <div class='col-lg-9 col-md-8'>
                             <div class='event-info'>
                                 <div class='event-title'>
-                                    <h1>{{ company.name }}{% if company.name in active_companies %}
+                                    <h1>{{ company.name }}
                                         <span style="font-size: x-small; -webkit-box-shadow: 5px 5px 5px -4px #000000; 
                                         box-shadow: 5px 5px 5px -4px #000000; " class="badge badge-pill badge-success">Active</span>
-                                        {% endif %}</h1>
+                                        </h1>
                                 </div>
                                 <div class="description">
                                     <div class="desc-content">{{company.description}}</div>
@@ -115,6 +116,45 @@
                     </div>
                 </div>
             </div>
+            {% endif %}
+
+            <!--Company Card Ends-->
+            {% endfor %}
+            {% for company in companies %}
+            <!--Company Card-->
+            {% if company.name not in active_companies %}
+            <div class="col-md-6 col-sm-12 col-xs-12 col-lg-4">
+                <div class='event-content'>
+                    <div class='row'>
+                        <div class='col-md-4 col-lg-3'>
+                            <div class='event-photo'>
+                                <div class='event-photo-container'>
+                                    <div class='event-photo-main'>
+                                        <img class="imageTop" src="{{ company.image.url }}" alt="green apple slice">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                        <div class='col-lg-9 col-md-8'>
+                            <div class='event-info'>
+                                <div class='event-title'>
+                                    <h1>{{ company.name }}
+                                        </h1>
+                                </div>
+                                <div class="description">
+                                    <div class="desc-content">{{company.description}}</div>
+                                    <br>
+                                    <div class="student"><b>Students:</b><br>
+                                    <span>{{company.students}}</span></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+            
             <!--Company Card Ends-->
             {% endfor %}
         </div>
