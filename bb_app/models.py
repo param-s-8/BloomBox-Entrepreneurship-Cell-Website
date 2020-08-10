@@ -29,6 +29,7 @@ class Events(models.Model):
     details=models.TextField()
     eventType=models.CharField(max_length=13, choices=TYPE_CHOICES, default="Panel Session")
     deadline=models.DateTimeField(default=datetime.now(),help_text = "Please use the following format: <em>YYYY-MM-DD</em>.")
+    feedbackStatus=models.CharField(max_length=13, choices=(("Active","Active"),("Inactive","Inactive")), default="Inactive")
     def is_active(self):
         return self.deadline > timezone.now()
 
@@ -52,7 +53,7 @@ class EventRegistrationsHackathon(models.Model):
     leaderEmail=models.EmailField()
     leaderContact=models.CharField(max_length=50)
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
-    noOfMembers=models.IntegerField()
+    nameOfTeam=models.CharField(max_length=50)
     nameOfMembers=models.TextField()
 
 def get_path_team(instance, filename):

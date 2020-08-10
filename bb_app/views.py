@@ -32,9 +32,9 @@ def registration(request,event):
             leaderEmail=request.POST["leaderEmail"]
             leaderContact=request.POST["leaderContact"]
             college=request.POST["Hcollege"]
-            noOfMembers=request.POST["noOfMembers"]
+            nameOfTeam=request.POST["nameOfTeam"]
             nameOfMembers=request.POST["nameOfMembers"]
-            var=EventRegistrationsHackathon.objects.create(title=eve,leaderName=leaderName,leaderEmail=leaderEmail,leaderContact=leaderContact,college=college,noOfMembers=noOfMembers,nameOfMembers=nameOfMembers)
+            var=EventRegistrationsHackathon.objects.create(title=eve,leaderName=leaderName,leaderEmail=leaderEmail,leaderContact=leaderContact,college=college,nameOfTeam=nameOfTeam,nameOfMembers=nameOfMembers)
             var.save()
             name=leaderName
         else:

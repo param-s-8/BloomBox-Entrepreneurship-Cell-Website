@@ -201,6 +201,11 @@
                                                 <button type="button" class="btn btn-seemore ">Register</button>
                                             </a>
                                             {% endif %}
+                                            {% if event.feedbackStatus == 'Active' %}
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore ">Feedback</button>
+                                            </a>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <!-- Modal -->
@@ -302,6 +307,11 @@
                                                 <button type="button" class="btn btn-seemore ">Register</button>
                                             </a>
                                             {% endif %}
+                                            {% if event.feedbackStatus == 'Active' %}
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore ">Feedback</button>
+                                            </a>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <!-- Modal -->
@@ -397,6 +407,11 @@
                                             {% if event.is_active %}
                                             <a href="registration/{{event.title}}">
                                                 <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                            {% if event.feedbackStatus == 'Active' %}
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore ">Feedback</button>
                                             </a>
                                             {% endif %}
                                         </div>
@@ -496,6 +511,11 @@
                                                 <button type="button" class="btn btn-seemore ">Register</button>
                                             </a>
                                             {% endif %}
+                                            {% if event.feedbackStatus == 'Active' %}
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore ">Feedback</button>
+                                            </a>
+                                            {% endif %}
                                         </div>
                                     </div>
                                     <!-- Modal -->
@@ -591,6 +611,11 @@
                                             {% if event.is_active %}
                                             <a href="registration/{{event.title}}">
                                                 <button type="button" class="btn btn-seemore ">Register</button>
+                                            </a>
+                                            {% endif %}
+                                            {% if event.feedbackStatus == 'Active' %}
+                                            <a href="#">
+                                                <button type="button" class="btn btn-seemore ">Feedback</button>
                                             </a>
                                             {% endif %}
                                         </div>
