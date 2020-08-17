@@ -60,6 +60,9 @@ def registration(request,event):
 
 def partners(request):
     return render(request,'sponsors.html')
+
+def results(request):
+    return render(request, 'results.html')
         
 
 def team(request):

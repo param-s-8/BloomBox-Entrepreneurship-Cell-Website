@@ -1,0 +1,74 @@
+.card-bb{
+    border-radius: 18px;
+    background: white;
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    font-family: roboto;
+    text-align: center;
+  
+    transition: 0.5s ease;
+    cursor: pointer;
+    margin:30px;
+  
+  }
+  
+  .card-bb .card-text {
+    margin-top: 25px;
+    padding: 20px 0;
+  }
+  
+  .card-bb .card-text p {
+    color: black;
+    font-size:15px;
+    font-weight: 300;
+  }
+  .card-bb .card-text h2 {
+    margin-top:0px;
+    font-size:28px;
+  }
+  
+  .card-stats {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background: blue;
+    font-size: x-large;
+    color: white;
+    padding: 20px 0;
+  }
+  
+  .card-bb:hover {
+    transform: scale(1.15);
+    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+  }
+
+  .section-title {
+    text-align: center;
+    padding-bottom: 50px;
+  }
+  
+  .section-title h2 {
+    font-size: 17px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #ccebff;
+    color: blue;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px; 
+  }
+  
+
+  .section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 500;
+    color: #919191;
+  }
+
+
+  .bs-example{
+    margin: 20px;
+}
+.accordion .fa{
+    margin-right: 0.5rem;
+}
