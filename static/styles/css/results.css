@@ -1,10 +1,9 @@
 .card-bb{
     border-radius: 18px;
     background: white;
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.9);
+    box-shadow: 2.5px 2.5px 6px rgba(0,0,0,0.4);
     font-family: roboto;
     text-align: center;
-  
     transition: 0.5s ease;
     cursor: pointer;
     margin:30px;
@@ -19,25 +18,26 @@
   .card-bb .card-text p {
     color: black;
     font-size:15px;
-    font-weight: 300;
+    font-weight: 250;
   }
   .card-bb .card-text h2 {
     margin-top:0px;
-    font-size:28px;
+    font-size:20px;
+    font-weight: 200;
   }
   
   .card-stats {
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
     background: blue;
-    font-size: x-large;
+    font-size: large;
     color: white;
-    padding: 20px 0;
+    padding: 10px 0;
   }
   
   .card-bb:hover {
-    transform: scale(1.15);
-    box-shadow: 5px 5px 15px rgba(0,0,0,0.6);
+    transform: scale(1.05);
+    box-shadow: 2.5px 2.5px 6px rgba(0,0,0,0.4);
   }
 
   .section-title {
