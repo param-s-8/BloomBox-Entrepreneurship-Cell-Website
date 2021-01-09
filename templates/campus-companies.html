@@ -106,7 +106,11 @@
                                         </h1>
                                 </div>
                                 <div class="description">
-                                    <div class="desc-content">{{company.description}}</div>
+                                    <div class="desc-content">
+                                        {% autoescape off %}
+                                        {{company.description}}
+                                        {% endautoescape %}
+                                    </div>
                                     <br>
                                     <div class="student"><b>Students:</b><br>
                                     <span>{{company.students}}</span></div>
@@ -143,7 +147,11 @@
                                         </h1>
                                 </div>
                                 <div class="description">
-                                    <div class="desc-content">{{company.description}}</div>
+                                    <div class="desc-content">
+                                        {% autoescape on %}
+                                        {{company.description}}
+                                        {% endautoescape %}
+                                    </div>
                                     <br>
                                     <div class="student"><b>Students:</b><br>
                                     <span>{{company.students}}</span></div>
