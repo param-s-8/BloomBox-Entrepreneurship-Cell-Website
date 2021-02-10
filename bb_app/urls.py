@@ -13,6 +13,7 @@ urlpatterns = [
     path('team',views.team,name="team"),
     path('about',views.about,name="about"),
     path('results',views.results,name="results"),
+    path('enspire',views.enspire,name="enspire"),
 
 ]
 

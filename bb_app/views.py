@@ -61,6 +61,9 @@ def registration(request,event):
 def partners(request):
     return render(request,'sponsors.html')
 
+def enspire(request):
+    return render(request,'enspire.html')
+
 def results(request):
     return render(request, 'results.html')
         
