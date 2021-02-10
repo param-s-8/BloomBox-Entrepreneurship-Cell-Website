@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang='en'>
+  {% load static %}
+    <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+            gtag('config', 'UA-142291179-2');
+        </script>
+
+        <title>BloomBox, E-Cell KJSCE</title>
+        <link rel="icon" type="image/ico" href="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" />
+
+        <!-- Required meta tags -->
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+
+        <meta name="description"
+        content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai" />
+        <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94" />
+        <meta name="keywords"
+            content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell" />
+        <meta name="robots" content="INDEX, FOLLOW" />
+        <meta name="author" content="Team BloomBox" />
+        <meta name="geo.region" content="IN" />
+        <link rel="canonical" href="" />
+
+    
+        <!--CSS-->
+        <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet"  />
+        <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet"  />
+        <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
+        
+
+        <!-- Template Main CSS File -->
+        <link href="{% static 'styles/css/indexpage.css' %}" rel="stylesheet">
+        <link href="{% static 'styles/css/enspire.css' %}" rel="stylesheet">
+        
+    </head>
+
+    <body onload="preloader();">
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+      <div class="container">
+          <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+          <div class="logo d-block d-lg-none">
+              <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+          </div>
+          <nav class="nav-menu d-none d-lg-block">
+              <ul class="nav-inner">
+                    
+                  <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
+                  <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                  <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                  <li class="active"><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
+                  <!-- <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li> -->
+                  <li ><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                  <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                  <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                  
+              </ul>
+          </nav>
+      <!--nav-menu -->
+      </div>
+    </header>
+    <!-- End Header -->  
+    <br>
+        <div class="container-fluid">
+            <div class="section-title" data-aos="fade-up" >
+                <h2  class="centered">Enspire</h2>
+                <p class="centered text-muted">A Monthly Entrepreneurship Magazine by BloomBox</p>
+            </div>
+            <div class="component">
+
+                <ul class="align">
+                  <!-- Book 1 -->
+                  <li>
+                    <figure class='book'>        
+                      <!-- Front -->        
+                      <ul class='hardcover_front'>
+                        <li>
+                          <img src="../media/images/enspire-covers/enspire-jan.png" alt="JanCover" width="100%" height="100%">
+                          <span class="ribbon bestseller">Nº1</span>
+                        </li>
+                        <li></li>
+                      </ul>        
+                      <!-- Pages -->        
+                      <ul class='page'>
+                        <li></li>
+                        <li> 
+                            <p class="content" >Date Of Publication:</p>
+                            <p class="date">31-01-2021</p>                     
+                            <p ><a class="btn" href="../media/pdfs/enspire-jan.pdf" >Download</a></p>
+                        </li>
+                        <li>
+                        </li>
+                        <li></li>
+                        <li></li>
+                      </ul>        
+                      <!-- Back -->        
+                      <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <figcaption class="outside_text">
+                        <h4 class="heading" >Overcoming the fear of entrepreneurship</h4>
+                        <p>There are many more good ideas than there are
+                            ventures, and one of the main reasons for this is
+                            people's fear of starting them. </p>
+                      </figcaption>
+                    </figure>
+                  </li>  
+                  <!-- Book 2 -->
+                  <li>
+                    <figure class='book'>        
+                      <!-- Front -->        
+                      <ul class='hardcover_front'>
+                        <li>
+                          <img src="../media/images/enspire-covers/enspire-nov.png" alt="NovCover" width="100%" height="100%">
+                          <span class="ribbon new">NEW</span>
+                        </li>
+                        <li></li>
+                      </ul>        
+                      <!-- Pages -->        
+                      <ul class='page'>
+                        <li></li>
+                        <li>
+                          <p class="content">Date of publication:</p>
+                          <p class="date">29-11-2020</p>
+                          <p><a class="btn" href="../media/pdfs/enspire-nov.pdf">Download</a></p>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>        
+                      <!-- Back -->        
+                      <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <figcaption class="outside_text">
+                        <h4 class="heading">How to make most of your education when starting a business.</h4>
+                        <p>Many young
+                            entrepreneurs ask themselves this question:
+                            Should I finish school or start my business?
+                            Deciding to start a business while in school
+                            can pose quite a dilemma, but there’s good
+                            news: It doesn’t have to be one or the othe </p>
+                      </figcaption>
+                    </figure>
+                  </li>  
+                  <!-- Book 3 -->
+                  <li>
+                    <figure class='book'>       
+                      <!-- Front -->        
+                      <ul class='hardcover_front'>
+                        <li>
+                          <img src="../media/images/enspire-covers/enspire-oct.png" width="100%" height="100%">
+                        </li>
+                        <li></li>
+                      </ul>        
+                      <!-- Pages -->        
+                      <ul class='page'>
+                        <li></li>
+                        <li>
+                          <p class="content">Date of Publication:</p>
+                          <p class="date">03-10-2020</p>
+                           <p><a class="btn" href="../media/pdfs/enspire-oct.pdf">Download</a></p>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>        
+                      <!-- Back -->        
+                      <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <figcaption class="outside_text">
+                        <h4 class="heading">7 Signs: Do you have Entrepreneurship in Blood?</h4>
+                        <p>Entrepreneurship is a dream, it is a passion, it is a
+                            dedication, it is worship, it is service, and overall it is a
+                            mind-set.  </p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                   <!-- Book 4 -->
+                   <li>
+                    <figure class='book'>       
+                      <!-- Front -->        
+                      <ul class='hardcover_front'>
+                        <li>
+                          <img src="../media/images/enspire-covers/enspire-sept.png" width="100%" height="100%">
+                        </li>
+                        <li></li>
+                      </ul>        
+                      <!-- Pages -->        
+                      <ul class='page'>
+                        <li></li>
+                        <li>
+                          <p class="content">Date of Publication:</p>
+                          <p class="date">26-09-2020</p>
+                          <p><a class="btn" href="../media/pdfs/enspire-sept.pdf">Download</a></p>
+                        </li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                      </ul>        
+                      <!-- Back -->        
+                      <ul class='hardcover_back'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <ul class='book_spine'>
+                        <li></li>
+                        <li></li>
+                      </ul>
+                      <figcaption class="outside_text">
+                        <h4 class="heading">Overcoming the fear of entrepreneurship</h4>
+                        <p >Entrepreneurship Is All About Overcoming Obstacles-Bold
+                            Entrepreneurship is not a destination; it’s a journey. On this journey, successful entrepreneurs</p>
+                      </figcaption>
+                    </figure>
+                  </li>
+                </ul>  
+
+            </div>
+        </div>
+
+    
+        <script>
+            // Get the current year for the copyright
+                $('#year').text(new Date().getFullYear());
+        
+            //Disable zoom
+            document.addEventListener('touchmove', function(event) {
+            event = event.originalEvent || event;
+            if(event.scale > 1) {
+                  event.preventDefault();
+            }
+            }, false);
+    
+            let old = $('.card').get(0);
+            $('.card').click(function(){
+            if(old!=null && $(old).hasClass('open'))
+                $(old).toggleClass('open');
+            $(this).toggleClass('open');
+            old = this;
+    
+            })
+        
+            </script>
+    </body>
+        <br>
+        <!-- ======= Footer ======= -->
+        <footer id="footer">
+          <div class="footer-top">
+              <div class="container">
+                  <div class="row justify-content-center">
+                      <div class="col-xl-10">
+                          <div class="row">
+                              <div class="col-lg-4 col-md-6 footer-links">
+                                  <h4>Useful Links</h4>
+                                  <ul>
+                                      <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+                                      <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                      <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
+                                      <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
+                                      <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team Members</a></li>
+                                      <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
+                                  </ul>
+                              </div>
+                              <div class="col-lg-4 col-md-6 footer-contact">
+                                  <h4>Contact Us</h4>
+                                  <p>
+                                      KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
+                                      <br><br>
+                                      <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                      <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                      <br>
+                                  </p>
+                              </div>
+                              <div class="col-lg-4 col-md-6 footer-info">
+                                  <h3>Follow Us</h3>
+                                  <div class="social-links mt-3">
+                                      <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                      <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                      <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                      <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="container">
+              <div class="credits">
+                  Designed by<a href="#"> BloomBox, E-Cell KJSCE</a>
+              </div>
+          </div>
+        </footer>
+        <!-- End Footer -->
+
+      <!-- <div id="preloader"></div> -->
+      <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+
+     
+      <!-- Preloader -->
+      <script src="{% static 'scripts/script/preloader.js' %}"></script>
+      
+      <!-- Vendor JS Files -->
+      <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+      <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+      <script src="{% static 'scripts/basic/aos.js' %}"></script>
+
+      <!-- Template Main JS File -->
+      <script src="{% static 'scripts/script/main-index.js' %}"></script>
+
+    </body>
+
+</html>
