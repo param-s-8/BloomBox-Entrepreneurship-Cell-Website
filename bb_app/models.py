@@ -8,6 +8,8 @@ class Campus(models.Model):
     image=models.ImageField(upload_to='images/campus-company/cc-logos',blank=True, null=True)
     students=models.TextField()
     description=models.TextField()
+    def __str__(self):
+        return self.name
 
 
 def get_path_events(instance, filename):
@@ -32,11 +34,12 @@ class Events(models.Model):
     feedbackStatus=models.CharField(max_length=13, choices=(("Active","Active"),("Inactive","Inactive")), default="Inactive")
     def is_active(self):
         return self.deadline > timezone.now()
+    def __str__(self):
+        return self.title
 
 class EventImages(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="moreImages")
     moreImages = models.ImageField(upload_to=get_path_events,blank=True, null=True)
-
 
 class EventRegistrations(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrations")
@@ -46,6 +49,8 @@ class EventRegistrations(models.Model):
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     branch=models.CharField(max_length=100)
     year=models.CharField(max_length=2, default="TY")
+    def __str__(self):
+        return self.title + "_" + self.email
     
 class EventRegistrationsHackathon(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrationsHackathon")
@@ -55,6 +60,8 @@ class EventRegistrationsHackathon(models.Model):
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     nameOfTeam=models.CharField(max_length=50)
     nameOfMembers=models.TextField()
+    def __str__(self):
+        return self.title + "_" + self.leaderEmail
 
 def get_path_team(instance, filename):
     return os.path.join(
@@ -74,3 +81,5 @@ class Message(models.Model):     #about us
     email=models.EmailField()
     contact=models.CharField(max_length=15)
     message=models.TextField()
+    def __str__(self):
+        return self.name
