@@ -50,7 +50,7 @@ class EventRegistrations(models.Model):
     branch=models.CharField(max_length=100)
     year=models.CharField(max_length=2, default="TY")
     def __str__(self):
-        return self.title + "_" + self.email
+        return self.title.title + "_" + self.email
     
 class EventRegistrationsHackathon(models.Model):
     title=models.ForeignKey(Events,on_delete=models.CASCADE,related_name="registrationsHackathon")
@@ -61,7 +61,7 @@ class EventRegistrationsHackathon(models.Model):
     nameOfTeam=models.CharField(max_length=50)
     nameOfMembers=models.TextField()
     def __str__(self):
-        return self.title + "_" + self.leaderEmail
+        return self.title.title + "_" + self.leaderEmail
 
 def get_path_team(instance, filename):
     return os.path.join(
