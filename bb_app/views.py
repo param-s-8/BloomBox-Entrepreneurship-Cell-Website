@@ -12,7 +12,7 @@ def index(request):
 
 def campus(request):
     companies=Campus.objects.all().order_by("name")
-    active_companies=["Nurturing Lives","Synergy","LAUNCHiT","&Evolve","Learnation","Notebook"]
+    active_companies=["Nurturing Lives","Synergy","LAUNCHiT","&Evolve","Learnation","Notebook","Pasken","Studbud"]
     context={'companies':companies,'active_companies':active_companies}
     return render(request,"campus-companies.html",context)
 
