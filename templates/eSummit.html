@@ -66,11 +66,11 @@
             </div>
             <nav class="nav-menu d-none d-lg-block">
                 <ul class="nav-inner">
-                    <li><a href="/registration.html">Home<i class="icofont-home"></i></a></li>
+                    <li><a href="{% url 'index' %}">Home<i class="icofont-home"></i></a></li>
                     <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
                     <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
                     <li><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
-                    <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li>
+                    <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt=""></a> </li>
                     <li class="active"><a href="{% url 'eSummit' %}">E-Summit 2021<i class="icofont-ebook"></i></a></li>
                     <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
                     <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
@@ -407,26 +407,24 @@
                                 <h3 style="font-size: 18px;">HAVE ANY QUERY?</h3>
                                 <form action="/eSummitQuery" method="POST">
                                     {% csrf_token %}
-                                    <div>
-                                        <p>Name</p>
-                                        <input class="col2 first" type="text" id="name" name="name" placeholder="Your name" maxlength="255" required>
+                                    <div class="form-group">
+                                        <label for="name">Name</label>
+                                        <input type="text" class="form-control" id="name" name='name' placeholder="Enter Name" required>
+                                      </div>
+                                    <div class="form-group">
+                                      <label for="email">Email</label>
+                                      <input type="email" class="form-control" id="email" name='email' aria-describedby="emailHelp" placeholder="Enter email">
                                     </div>
-                                    <div>
-                                        <p>Email</p>
-                                        <input class="col2 first" type="email" id="email" name="email" placeholder="Your email" required>
+                                    <div class="form-group">
+                                      <label for="number">Password</label>
+                                      <input type="tel" class="form-control" id="number" name='number' placeholder="Password" pattern=[0-9]{10}>
                                     </div>
-                                    <div>
-                                        <p>Contact Number</p>
-                                        <input class="col2 first" id="number" name="number" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                                    <div class="form-group">
+                                        <label for="textarea">Query</label>
+                                      <textarea type="textarea" class="form-control" id="textarea" name='textarea'></textarea>
                                     </div>
-                                    <div>
-                                        <p>Message</p>
-                                        <textarea name="textarea" id="textarea" placeholder="Your message here..." height="50" required></textarea>
-                                    </div>
-                                    <div class="text-center">
-                                        <button type="submit" class="btn btn-seemore" style="padding: 10px;">Submit</button>
-                                    </div>
-                                </form>
+                                    <button type="submit" class="btn" style='margin: 0;'>Submit</button>
+                                  </form>
                             </div>
                         </div>
                     </div>
@@ -435,7 +433,7 @@
         </div>
         <div class="container">
             <div class="credits">
-                Designed by<a href="#"> BloomBox, E-Cell KJSCE</a>
+                Designed by<a href="/"> BloomBox, E-Cell KJSCE</a>
             </div>
         </div>
     </footer>
