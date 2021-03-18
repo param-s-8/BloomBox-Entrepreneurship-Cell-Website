@@ -36,6 +36,26 @@
     <link href="{% static 'styles/css/esummit-dividers.css' %}" rel="stylesheet">
     <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
     
+    <style>
+        .card{
+            border: none;
+        }
+        .card-header{
+            background-color: white;
+            padding: 0;
+        }
+        .faq-btn{
+            background-color: white;
+            color: black;
+        }
+        .faq-btn:hover{
+            text-decoration: none;
+            color: #5697d0;
+        }
+        .faq-btn:active{
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
     <div id="particles-js"></div>
@@ -343,28 +363,87 @@
                 <p>With their unwavering support we execute Events, garner talent & create Entrepreneurs.</p></center>
             </div><br><br>
             <div class='row'>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
                     <img src="../media/images/sponsors/CampBuddy.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
                     <img src="../media/images/sponsors/CodingBlocks.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="../media/images/sponsors/Fyntune.png" class="img-fluid" alt="">
+                </div>  
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
                     <img src="../media/images/sponsors/Fyntune.png" class="img-fluid" alt="">
                 </div>  
             </div><br><br>
             <div class='row'>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in">
                     <img src="../media/images/sponsors/CampBuddy.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in" data-aos-delay="100">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="100">
                     <img src="../media/images/sponsors/CodingBlocks.png" class="img-fluid" alt="">
                 </div>
-                <div class="col-lg-4 col-md-4 col-12" data-aos="zoom-in" data-aos-delay="200">
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
                     <img src="../media/images/sponsors/Fyntune.png" class="img-fluid" alt="">
                 </div>   
+                <div class="col-lg-3 col-md-4 col-6" data-aos="zoom-in" data-aos-delay="200">
+                    <img src="../media/images/sponsors/Fyntune.png" class="img-fluid" alt="">
+                </div>  
             </div>
-            
+        </div>
+    </div>
+
+    <div class='faqs'>
+        <div class='container'>
+            <center>
+                <h2>You've Got Questions?</h2>
+                <p>We've Got You Covered</p>
+            </center>
+                <div id="accordion">
+                    <div class="card">
+                      <div class="card-header" id="headingOne">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link faq-btn" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <i class="icofont-plus-square"></i> Collapsible Group Item #1
+                          </button>
+                        </h5>
+                      </div>
+                  
+                      <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link faq-btn collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <i class="icofont-plus-square"></i> Collapsible Group Item #2
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <div class="card-header" id="headingThree">
+                        <h5 class="mb-0">
+                          <button class="btn btn-link faq-btn collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <i class="icofont-plus-square"></i> Collapsible Group Item #3
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                        <div class="card-body">
+                          Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                        </div>
+                      </div>
+                    </div>
+                </div>
         </div>
     </div>
 
