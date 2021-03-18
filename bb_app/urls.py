@@ -14,6 +14,8 @@ urlpatterns = [
     path('about',views.about,name="about"),
     path('results',views.results,name="results"),
     path('enspire',views.enspire,name="enspire"),
+    path('eSummit',views.eSummit,name="eSummit"),
+    path('eSummitRegistration/<int:eventId>',views.eSummitRegistration,name="eSummitRegistration"),
 
 ]
 

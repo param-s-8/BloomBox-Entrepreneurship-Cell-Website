@@ -83,3 +83,32 @@ class Message(models.Model):     #about us
     message=models.TextField()
     def __str__(self):
         return self.name
+
+
+class ESummitRegistration(models.Model):
+    email=models.EmailField()
+    eventId=models.IntegerField()
+    eventName=models.CharField(max_length=50)
+    name=models.CharField(max_length=100)
+    contact=models.CharField(max_length=50)
+    college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
+    branch=models.CharField(max_length=100)
+    year=models.CharField(max_length=2, default="TY")
+    def __str__(self):
+        return self.eventName + "_" + self.email
+
+
+
+class ESummitRegistrationHackathon(models.Model):
+    eventId=models.IntegerField()
+    eventName=models.CharField(max_length=50)
+    nameOfTeam=models.CharField(max_length=50)
+    leaderEmail=models.EmailField()
+    leaderName=models.CharField(max_length=100)
+    leaderContact=models.CharField(max_length=50)
+    college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
+    alternateEmail=models.EmailField()
+    alternateContact=models.CharField(max_length=50)
+    nameOfMembers=models.TextField()
+    def __str__(self):
+        return self.eventName + "_" + self.leaderEmail

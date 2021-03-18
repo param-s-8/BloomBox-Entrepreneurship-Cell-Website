@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import  User,auth
-from .models import Events,EventRegistrations,EventRegistrationsHackathon,Campus,Message
+from .models import Events,EventRegistrations,EventRegistrationsHackathon,ESummitRegistration,ESummitRegistrationHackathon,Campus,Message
 from datetime import datetime
 #from tablib import Dataset
 #from .resources import EventRegistrationsResource,EventRegistrationsHackathonResource
@@ -89,6 +89,47 @@ def about(request):
         message=request.POST["textarea"]
         var2=Message.objects.create(name=name,email=email,contact=contact,message=message)
     return render(request,'about.html')
+
+
+def eSummit(request):
+    return render(request,'eSummit.html')
+
+def eSummitRegistration(request, eventId):
+    if (eventId >=1 and eventId <=7):
+        eventMappings = {1:'speaker session',2:'crypto',3:'finance session',4:'ennovate',5:'Treasure Hunt',6:'Social Event',7:'Ideation'}
+        if request.method == "POST":
+            eventName = eventMappings.get(eventId)
+            if(eventId <= 3):
+                email=request.POST["email"]
+                name=request.POST["name"]
+                contact=request.POST["contact"]
+                college=request.POST["college"]
+                branch=request.POST["branch"]
+                year=request.POST["year"]
+                esummit_var=ESummitRegistration.objects.create(email=email,eventId=eventId, eventName=eventName, name=name, contact=contact, college=college, branch=branch, year=year)
+                esummit_var.save()
+            else:
+                nameOfTeam=request.POST["nameOfTeam"]
+                leaderEmail=request.POST["leaderEmail"]
+                leaderName=request.POST["leaderName"]
+                leaderContact=request.POST["leaderContact"]
+                college=request.POST["Hcollege"]
+                alternateEmail=request.POST["alternateEmail"]
+                alternateContact=request.POST["alternateContact"]
+                nameOfMembers=request.POST["nameOfMembers"]
+                esummit_var=ESummitRegistrationHackathon.objects.create(eventId=eventId, eventName=eventName,nameOfTeam=nameOfTeam,leaderEmail=leaderEmail,leaderName=leaderName,leaderContact=leaderContact,college=college,alternateEmail=alternateEmail,alternateContact=alternateContact,nameOfMembers=nameOfMembers)
+                esummit_var.save()
+            return render(request,'eSummit.html')
+        else:
+            if(eventId <= 3):
+                eventType=1
+            else:
+                eventType=2
+            eventName = eventMappings.get(eventId)
+            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName}
+            return render(request, 'eSummitRegistration.html', context)
+    else:
+        return render(request, 'eSummit.html')
 
 '''def importcsv(request):
     file_format = "CSV"

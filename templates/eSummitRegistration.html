@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Summit Registration</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .btn{
+        font-family: "Raleway", sans-serif;
+        background-color: white;
+        color: black;
+        font-weight: 500;
+        font-size: 14px;
+        letter-spacing: 1px;
+        display: inline-block;
+        padding: 14px 32px;
+        border-radius: 4px;
+        transition: 0.5s;
+        line-height: 1;
+        margin: 10px 10px;
+        -webkit-animation-delay: 0.8s;
+        animation-delay: 0.8s;
+        
+    }
+
+    .btn:hover {
+        background: #0099ff;
+    }
+
+    @media only screen and (max-width:768px){
+        body {
+            background-image: none !important;
+        }
+
+        .row>div{
+            left:0 !important;
+        }
+
+    }
+
+    .first{
+        position: relative;
+    }
+
+    label{
+        color: white;
+    }
+    #particles-js{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        background-color: #000;
+        background-image: url('');
+        background-size: cover;
+        /* background-position: 50% 50%; */
+        background-repeat: no-repeat;
+        z-index: -1;
+    }
+    </style>
+</head>
+<body>
+    
+    {% if eventType == 1 %}
+        <div id="particles-js"></div>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img src='../media/images/eSummit/ill1.png' class='img-fluid'>
+                </div>
+                <div class='col-md-6'>
+                    <div style="padding:30px 30px; border: 5px solid white; border-radius: 24px;">
+                        <form action="/eSummitRegistration/{{eventId}}" method="POST">
+                        {% csrf_token %}
+                            <div class="form-group form-group-inline">
+                                <center><h4 style="color:white">{{eventName}}</h4></center><br>
+                            <label for="name">Name:</label>
+                            <input class="form-control" id="name" name="name" type="text" placeholder="Enter Name..." required>
+                            </div>
+                            <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input class="form-control" id="email" name="email" type="email" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact">Contact:</label>
+                                <input class="form-control" id="contact" name="contact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="college">College:</label>
+                                <input class="form-control" id="college" name="college" type="text" placeholder="Enter College Name..." required>
+                            </div>
+                            <div class="form-group">
+                                <label for="branch">Branch:</label>
+                                <select class="form-control" id="branch" name="branch" type="text" >
+                                <option value='none' selected disabled hidden>Select Your Branch</option>
+                                <option value='COMPS'>COMPS</option>
+                                <option value='ETRX'>ETRX</option>
+                                <option value='EXTC'>EXTC</option>
+                                <option value='IT'>IT</option>
+                                <option value='MECH'>MECH</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="branch">Year of Study:</label>
+                                <select class="form-control" id="year" name="year" type="text" >
+                                <option value='none' selected disabled hidden>Select Your Year</option>
+                                <option value='FY'>FY</option>
+                                <option value='SY'>SY</option>
+                                <option value='TY'>TY</option>
+                                <option value='LY'>LY</option>
+                                </select>
+                            </div>
+                            <div class='d-flex justify-content-center'>
+                                <button  type="submit" class="btn btn-seemore">Register</button>
+                                <button type='reset' class='btn'>Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+
+    {% else %}
+
+    <!--UNCOMMENT BELOW CODE FOR 2ND FORM-->
+    <div id="particles-js"></div>
+        <div class='container'>
+        <div class='row'>
+            <div class='col-md-6'>
+                <img src='../media/images/eSummit/ill1.png' class='img-fluid'>
+            </div>
+            <div class='col-md-6'>
+                <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;">
+                    <form action="/eSummitRegistration/{{eventId}}" method="POST">
+                        {% csrf_token %}
+                        <center><h4 style="color:white">{{eventName}}</h4></center><br>
+                        <div class="form-group">
+                            <label for="nameOfTeam">Team Name:</label>
+                            <input type="text" class="form-control" id="nameOfTeam" name="nameOfTeam" placeholder="Enter Your Team Name" required>
+                        </div>
+                        <div class="form-group form-group-inline">
+                            <label for="leaderName">Team Leader Name:</label>
+                            <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="leaderEmail">Team Leader Email:</label>
+                            <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="leaderContact">Team Leader Contact:</label>
+                            <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="Hcollege">College Name:</label>
+                            <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name..." required>
+                        </div>
+                        <div class="form-group">
+                            <label for="altEmail">Alternate Email ID:</label>
+                            <input type="email" class="form-control" id="altEmail" name="alternateEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="altContact">Alternate Contact:</label>
+                            <input class="form-control" id="altContact" name="alternateContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="nameOfMembers">Name of Team Members:</label>
+                            <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated..." required>
+                        </div>
+                        <div class='d-flex justify-content-center'>
+                            <button  type="submit" class="btn btn-seemore ">Register</button>
+                            <button type='reset' class='btn'>Reset</button>
+                        </div>
+                    </form>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    {% endif %}
+
+    <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+    <script>
+        particlesJS.load('particles-js','../static/scripts/script/particlesjs-config.json',
+        function(){
+            console.log('Loaded');
+        })
+    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
