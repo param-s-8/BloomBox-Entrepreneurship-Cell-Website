@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.http import HttpResponse
 from django.contrib.auth.models import  User,auth
-from .models import Events,EventRegistrations,EventRegistrationsHackathon,ESummitRegistration,ESummitRegistrationHackathon,Campus,Message
+from .models import Events,EventRegistrations,EventRegistrationsHackathon,ESummitRegistration,ESummitRegistrationHackathon,Campus,Message, ESummitMessage
 from datetime import datetime
 #from tablib import Dataset
 #from .resources import EventRegistrationsResource,EventRegistrationsHackathonResource
@@ -130,6 +130,16 @@ def eSummitRegistration(request, eventId):
             return render(request, 'eSummitRegistration.html', context)
     else:
         return render(request, 'eSummit.html')
+
+
+def eSummitQuery(request):
+    if request.method=="POST":
+        name=request.POST["name"]
+        email=request.POST["email"]
+        contact=request.POST["number"]
+        message=request.POST["textarea"]
+        query_var=ESummitMessage.objects.create(name=name,email=email,contact=contact,message=message)
+    return render(request,'eSummit.html')
 
 '''def importcsv(request):
     file_format = "CSV"

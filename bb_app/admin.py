@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Campus,Events,EventImages,EventRegistrations,Message,EventRegistrationsHackathon,ESummitRegistration,ESummitRegistrationHackathon
+from .models import Campus,Events,EventImages,EventRegistrations,Message,EventRegistrationsHackathon,ESummitRegistration,ESummitRegistrationHackathon, ESummitMessage
 
 class EventImagesInline(admin.TabularInline):
     model = EventImages
@@ -15,4 +15,5 @@ admin.site.register(EventRegistrationsHackathon)
 admin.site.register(Message)
 admin.site.register(ESummitRegistration)
 admin.site.register(ESummitRegistrationHackathon)
+admin.site.register(ESummitMessage)
 # Register your models here.

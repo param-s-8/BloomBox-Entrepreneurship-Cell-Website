@@ -112,3 +112,11 @@ class ESummitRegistrationHackathon(models.Model):
     nameOfMembers=models.TextField()
     def __str__(self):
         return self.eventName + "_" + self.leaderEmail
+
+class ESummitMessage(models.Model):
+    name=models.CharField(max_length=255)
+    email=models.EmailField()
+    contact=models.CharField(max_length=15)
+    message=models.TextField()
+    def __str__(self):
+        return self.email

@@ -372,3 +372,80 @@ text-decoration: none;
 .btn-knowmore{
   color: #1c447c;
 }
+
+
+/*SPONSORS*/
+
+.sponsors {
+  background: whitesmoke;
+  padding: 15px 0;
+  text-align: center;
+}
+
+
+.sponsors img {
+  width: 50%;
+  -webkit-filter: grayscale(100);
+  filter: grayscale(100);
+  transition: all 0.4s ease-in-out;
+  display: inline-block;
+  padding: 15px 0;
+}
+
+.sponsors img:hover {
+  -webkit-filter: none;
+  filter: none;
+  transform: scale(1.2);
+}
+
+
+@media (max-width: 768px) {
+  .sponsors img {
+    width: 40%;
+  }
+}
+
+@media (max-width: 575px) {
+  .sponsors img {
+    width: 50%;
+  }
+}
+
+
+/* Footer form*/
+
+/*--------------------------------------------------------------
+# Back to top button
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  display: none;
+  right: 15px;
+  bottom: 15px;
+  z-index: 99999;
+  
+}
+
+.back-to-top a:hover{
+  text-decoration: none !important;
+}
+
+.back-to-top i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 4px;
+  background: #000000;
+  color: #fff;
+  transition: all 0.4s;
+  text-decoration: none;
+}
+
+.back-to-top i:hover {
+  background: #737373;
+  color: #fff;
+  
+}
