@@ -1,6 +1,465 @@
-<a href="/eSummitRegistration/1"><button>event 1 register</button></a> <br><br>
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-142291179-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-142291179-2');
+    </script>
+    <link rel="icon" type="image/ico" href="../media/images/eSummit/eS-white.png">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
+    <meta name="description" content="BloomBox, E-Cell KJSCE is the student run non-profit organization Entrepreneurship promoting body at K. J. Somaiya College of Engineering, Mumbai">
+    <meta name="google-site-verification" content="sfZdBesrUXPWwnmytZsgEymdT_Brz2EvjYQ36cPVM94">
+    <meta name="keywords" content="BloomBox, E-Cell, ecell, KJSCE, k j  somaiya college of engineering, entrepreneurship, edc, entrepreneurship development cell, entrepreneurship cell">
+    <meta name="robots" content="INDEX, FOLLOW">
+    <meta name="author" content="Team BloomBox">
+    <meta name="geo.region" content="IN">
+    <link rel="canonical" href="">
+    <title>E-Summit, KJSCE</title>
+    
+    <!--CSS-->
+    <link href="{% static 'styles/basic/preloader.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/aos.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/icofont/icofont.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/boxicons/css/boxicons.min.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/basic/owl.carousel.min.css' %}" rel="stylesheet">
 
-<a href="/eSummitRegistration/3"><button>event 1 register</button></a> <br><br>
+    <!-- Template Main CSS File -->
+    <link href="{% static 'styles/css/esummit.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/esummit-dividers.css' %}" rel="stylesheet">
+    <link href="{% static 'styles/css/footercss.css' %}" rel="stylesheet">
+    
+</head>
+<body>
+    <div id="particles-js"></div>
+        <!-- ======= Hero Section ======= -->
+        <section id="hero">
+            <div class="hero-container">
+                    <a href="/" class="hero-logo" data-aos="zoom-in">
+                        <img class='img-fluid' src="../media/images/eSummit/esummit-logo-white.png" alt="">
+                    </a>
+                    <h1 data-aos="zoom-in">By BloomBox 2020-21</h1>
+                    <h2 data-aos="fade-up">
+                        <i class="icofont-quote-left"></i>
+                        <b style='font-weight: 800; font-size: x-large;'>First Time In History of KJSCE</b>
+                        <i class="icofont-quote-right"></i>
+                    </h2>
+                    <!-- <a data-aos="fade-up" href="{% url 'events' %}" class="btn-get-started scrollto">Register For Event</a> -->
+                    <!-- <a data-aos="fade-up" href="{% url 'results' %}" class="btn-get-started scrollto">Results</a> -->
+                </div>
+        </section>
+        <!-- End Hero -->
 
-<a href="/eSummitRegistration/5"><button>event 1 register</button></a> <br><br>
+    <!-- ======= Header ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container">
+            <!-- The main logo is shown in mobile version only. The centered nav-logo in nav menu is displayed in desktop view  -->
+            <div class="logo d-block d-lg-none">
+                <a href="{% url 'index' %}"><img src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a>
+            </div>
+            <nav class="nav-menu d-none d-lg-block">
+                <ul class="nav-inner">
+                    <li class="active"><a href="/registration.html">Home<i class="icofont-home"></i></a></li>
+                    <li><a href="{% url 'campus' %}">Campus Company<i class="icofont-company"></i></a></li>
+                    <li><a href="{% url 'events' %}">Events<i class="icofont-brand-slideshare"></i></a></li>
+                    <li><a href="{% url 'enspire' %}">Enspire<i class="icofont-ebook"></i></a></li>
+                    <!-- <li class='centreLogo'><a href="{% url 'index' %}"><img style="height:40px;width:40px;" src="../media/images/basic/BloomBox, E-Cell KJSCE - Logo Small.png" alt="" class="img-fluid"></a> </li> -->
+                    <li><a href="{% url 'partners' %}">Partners<i class="icofont-handshake-deal"></i></a></li>
+                    <li><a href="{% url 'team' %}">Team Members<i class="icofont-people"></i></a></li>
+                    <li><a href="{% url 'about' %}">About<i class="icofont-question"></i></a></li>
+                </ul>
+            </nav>
+        <!--nav-menu -->
+        </div>
+    </header>
+    <!-- End Header --> 
 
+
+    <!-- FIRST EVENT -->
+    <div class='first'>
+        <div class="shape-divi-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>  
+            
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png'>
+                </div>
+                <div class='col-md-6'>
+                    <h3>Event 1</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                     
+                    <a href='/eSummitRegistration/1'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+            </div>
+            
+        </div>
+
+    </div>
+
+    <!-- SECOND EVENT -->
+    <div class='second'>
+        <div class="shape-divi-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h3>Event 2</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/2'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- THIRD EVENT -->
+    <div class='third'>
+        <div class="shape-divi-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="shape-divi-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+
+              
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6'>
+                    <h3 >Event 3</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/3'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- FOURTH EVENT -->
+    <div class='fourth'>
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h3>Event 4</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/4'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- FIFTH EVENT -->
+    <div class='fifth'>
+        <div class="shape-divi-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="shape-divi-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+              
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6'>
+                    <h3>Event 5</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/5'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- SIXTH EVENT -->
+    <div class='sixth'>
+            
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <h3>Event 6</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/6'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- SEVENTH EVENT -->
+    <div class='seventh'>
+        <div class="shape-divi-top">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+        <div class="shape-divi-bottom">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+                <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+                <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+            </svg>
+        </div>
+              
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6'>
+                    <h3>Event 7</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/7'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <div class='sponsors'>
+        
+              
+        <div class="container">
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                </div>
+                <div class='col-md-6'>
+                    <h3>Event 7</h3>
+                    <h5>When & Where? 5th April, 2021 & Online</h5> 
+                    <p >
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
+                    ndustry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                    </p>
+                     
+                    <a href='/eSummitRegistration/7'><button type='button' class='btn'>Register</button></a>
+                    <button type='button' class='btn'>Know More</button>
+                </div>
+                
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-xl-10">
+                        <div class="row">
+                            <div class="col-lg-4 col-md-6 footer-links">
+                                <h4>Useful Links</h4>
+                                <ul>
+                                    <li><i class="bx bx-chevron-right"></i> <a href="{% url 'index' %}">Home</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'campus' %}">Campus Company</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'events' %}">Events</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'partners' %}">Partners</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'team' %}">Team Members</a></li>
+                                    <li><i class="bx bx-chevron-right"></i><a href="{% url 'about' %}">About</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-contact">
+                                <h4>Contact Us</h4>
+                                <p>
+                                    KJ Somaiya College of Engineering<br>Vidyanagar, Vidyavihar<br> Mumbai, India
+                                    <br><br>
+                                    <!-- <strong>Phone:</strong> +1 5589 55488 55<br> -->
+                                    <strong>Email:</strong><a href="mailto:bloombox.kjsce@somaiya.edu"> bloombox.kjsce@somaiya.edu</a>
+                                    <br>
+                                </p>
+                            </div>
+                            <div class="col-lg-4 col-md-6 footer-info">
+                                <h3>Follow Us</h3>
+                                <div class="social-links mt-3">
+                                    <a href="https://twitter.com/bloombox_kjsce" class="twitter"><i class="bx bxl-twitter"></i></a>
+                                    <a href="https://www.facebook.com/bloomboxkjsce/" class="facebook"><i class="bx bxl-facebook"></i></a>
+                                    <a href="https://www.instagram.com/bloombox_kjsce/" class="instagram"><i class="bx bxl-instagram"></i></a>
+                                    <a href="https://www.linkedin.com/company/bloombox-e-cell-kjsce" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="credits">
+                Designed by<a href="#"> BloomBox, E-Cell KJSCE</a>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <a href="#" class="back-to-top">
+        <i class="icofont-simple-up"></i>
+    </a>
+    <!-- Preloader -->
+    <script src="{% static 'scripts/script/preloader.js' %}"></script>
+
+    <!-- Vendor JS Files -->
+    <script src="{% static 'scripts/basic/jquery.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/bootstrap.bundle.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/venobox.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.waypoints.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/counterup.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'scripts/basic/jquery.sticky.js' %}"></script>
+    <script src="{% static 'scripts/basic/aos.js' %}"></script>
+    <!-- Template Main JS File -->
+    <script src="{% static 'scripts/script/main-index.js' %}"></script>
+        
+
+    
+    <!-- <script src="index.js"></script> -->
+    <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
+    <script>
+        particlesJS.load('particles-js','../static/scripts/script/particlesjs-config.json',
+        function(){
+            console.log('Loaded');
+        })
+    </script>
+</body>
+</html>
+
+<!--
+    <div class="shape-divi-top">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="shape-divi-bottom">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V46.29c47.79,22.2,103.59,32.17,158,28,70.36-5.37,136.33-33.31,206.8-37.5C438.64,32.43,512.34,53.67,583,72.05c69.27,18,138.3,24.88,209.4,13.08,36.15-6,69.85-17.84,104.45-29.34C989.49,25,1113-14.29,1200,52.47V0Z" opacity=".25" class="shape-fill"></path>
+            <path d="M0,0V15.81C13,36.92,27.64,56.86,47.69,72.05,99.41,111.27,165,111,224.58,91.58c31.15-10.15,60.09-26.07,89.67-39.8,40.92-19,84.73-46,130.83-49.67,36.26-2.85,70.9,9.42,98.6,31.56,31.77,25.39,62.32,62,103.63,73,40.44,10.79,81.35-6.69,119.13-24.28s75.16-39,116.92-43.05c59.73-5.85,113.28,22.88,168.9,38.84,30.2,8.66,59,6.17,87.09-7.5,22.43-10.89,48-26.93,60.65-49.24V0Z" opacity=".5" class="shape-fill"></path>
+            <path d="M0,0V5.63C149.93,59,314.09,71.32,475.83,42.57c43-7.64,84.23-20.12,127.61-26.46,59-8.63,112.48,12.24,165.56,35.4C827.93,77.22,886,95.24,951.2,90c86.53-7,172.46-45.71,248.8-84.81V0Z" class="shape-fill"></path>
+        </svg>
+    </div>
+-->

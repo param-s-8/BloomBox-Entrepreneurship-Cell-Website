@@ -1,0 +1,90 @@
+.btn{
+    font-family: "Raleway", sans-serif;
+    background-color: black;
+    color: white;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 14px 32px;
+    border-radius: 4px;
+    transition: 0.5s;
+    line-height: 1;
+    margin: 10px 10px;
+    -webkit-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+}
+.first , .second , .third , .fourth , .fifth, .sixth, .seventh, .sponsors{
+    position: relative;
+}
+
+.first .container, .second .container, .third .container , 
+.fourth .container, .fifth .container, .sixth .container, .seventh .container, .sponsors .container{
+    padding-top: 10%;
+    padding-bottom:10%;
+}
+
+.second, .fourth, .sixth, .sponsors{
+    background-color: black;
+    color: white;
+}
+.second .btn, .fourth .btn, .sixth .btn{
+    background-color: white;
+    color: black;
+}
+.shape-divi-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.shape-divi-bottom svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 155px;
+}
+
+.shape-divi-bottom .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .shape-divi-bottom svg {
+        width: calc(143% + 1.3px);
+        height: 56px;
+    }
+}
+
+.shape-divi-top {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.shape-divi-top svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 155px;
+}
+
+.shape-divi-top .shape-fill {
+    fill: #000000;
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .shape-divi-top svg {
+        width: calc(188% + 1.3px);
+        height: 78px;
+    }
+}
