@@ -93,7 +93,7 @@ class ESummitRegistration(models.Model):
     contact=models.CharField(max_length=50)
     college=models.CharField(max_length=255,default="K. J. Somaiya College of Engineering")
     branch=models.CharField(max_length=100)
-    year=models.CharField(max_length=2, default="TY")
+    year=models.CharField(max_length=20, default="TY")
     def __str__(self):
         return self.eventName + "_" + self.email
 
