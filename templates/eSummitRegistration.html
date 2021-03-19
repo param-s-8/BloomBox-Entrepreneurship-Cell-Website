@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Summit Registration</title>
+    <link rel="icon" type="image/ico" href="../media/images/eSummit/eS-white.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <style>
@@ -41,8 +42,9 @@
 
     }
 
-    .first{
+    .form1{
         position: relative;
+        margin-top: 30vh;
     }
 
     label{
@@ -93,24 +95,11 @@
                             </div>
                             <div class="form-group">
                                 <label for="branch">Branch:</label>
-                                <select class="form-control" id="branch" name="branch" type="text" >
-                                <option value='none' selected disabled hidden>Select Your Branch</option>
-                                <option value='COMPS'>COMPS</option>
-                                <option value='ETRX'>ETRX</option>
-                                <option value='EXTC'>EXTC</option>
-                                <option value='IT'>IT</option>
-                                <option value='MECH'>MECH</option>
-                                </select>
+                                <input class="form-control" id="branch" name="branch" type="text" placeholder="Enter Your Branch..." maxlength="50" required>
                             </div>
                             <div class="form-group">
                                 <label for="branch">Year of Study:</label>
-                                <select class="form-control" id="year" name="year" type="text" >
-                                <option value='none' selected disabled hidden>Select Your Year</option>
-                                <option value='FY'>FY</option>
-                                <option value='SY'>SY</option>
-                                <option value='TY'>TY</option>
-                                <option value='LY'>LY</option>
-                                </select>
+                                <input class="form-control" id="year" name="year" type="text" placeholder="Enter Your Year of Study..." maxlength="50" required>
                             </div>
                             <div class='d-flex justify-content-center'>
                                 <button  type="submit" class="btn btn-seemore">Register</button>
@@ -127,58 +116,61 @@
 
     <!--UNCOMMENT BELOW CODE FOR 2ND FORM-->
     <div id="particles-js"></div>
+    <dic class='form1'>
         <div class='container'>
-        <div class='row'>
-            <div class='col-md-6'>
-                <img src='../media/images/eSummit/ill1.png' class='img-fluid'>
-            </div>
-            <div class='col-md-6'>
-                <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;">
-                    <form action="/eSummitRegistration/{{eventId}}" method="POST">
-                        {% csrf_token %}
-                        <center><h4 style="color:white">{{eventName}}</h4></center><br>
-                        <div class="form-group">
-                            <label for="nameOfTeam">Team Name:</label>
-                            <input type="text" class="form-control" id="nameOfTeam" name="nameOfTeam" placeholder="Enter Your Team Name" maxlength="50" required>
-                        </div>
-                        <div class="form-group form-group-inline">
-                            <label for="leaderName">Team Leader Name:</label>
-                            <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." maxlength="50" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="leaderEmail">Team Leader Email:</label>
-                            <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="leaderContact">Team Leader Contact:</label>
-                            <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="Hcollege">College Name:</label>
-                            <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name..." maxlength="50" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="altEmail">Alternate Email ID:</label>
-                            <input type="email" class="form-control" id="altEmail" name="alternateEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="altContact">Alternate Contact:</label>
-                            <input class="form-control" id="altContact" name="alternateContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
-                        </div>
-                        <div class="form-group">
-                            <label for="nameOfMembers">Name of Team Members:</label>
-                            <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated..." required>
-                        </div>
-                        <div class='d-flex justify-content-center'>
-                            <button  type="submit" class="btn btn-seemore ">Register</button>
-                            <button type='reset' class='btn'>Reset</button>
-                        </div>
-                    </form>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img src='../media/images/eSummit/ill1.png' class='img-fluid'>
                 </div>
-                
+                <div class='col-md-6'>
+                    <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;">
+                        <form action="/eSummitRegistration/{{eventId}}" method="POST">
+                            {% csrf_token %}
+                            <center><h4 style="color:white">{{eventName}}</h4></center><br>
+                            <div class="form-group">
+                                <label for="nameOfTeam">Team Name:</label>
+                                <input type="text" class="form-control" id="nameOfTeam" name="nameOfTeam" placeholder="Enter Your Team Name" maxlength="50" required>
+                            </div>
+                            <div class="form-group form-group-inline">
+                                <label for="leaderName">Team Leader Name:</label>
+                                <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="leaderEmail">Team Leader Email:</label>
+                                <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="leaderContact">Team Leader Contact:</label>
+                                <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Hcollege">College Name:</label>
+                                <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name..." maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="altEmail">Alternate Email ID:</label>
+                                <input type="email" class="form-control" id="altEmail" name="alternateEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="altContact">Alternate Contact:</label>
+                                <input class="form-control" id="altContact" name="alternateContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nameOfMembers">Name of Team Members:</label>
+                                <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated..." required>
+                            </div>
+                            <div class='d-flex justify-content-center'>
+                                <button  type="submit" class="btn btn-seemore ">Register</button>
+                                <button type='reset' class='btn'>Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
             </div>
-        </div>
-    </div>
+            </div>
+    </dic>
+        
     {% endif %}
 
     <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
