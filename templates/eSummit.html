@@ -84,8 +84,6 @@
                         <b style='font-weight: 800; font-size: x-large;'>First Time In History of KJSCE</b>
                         <i class="icofont-quote-right"></i>
                     </h2>
-                    <!-- <a data-aos="fade-up" href="{% url 'events' %}" class="btn-get-started scrollto">Register For Event</a> -->
-                    <!-- <a data-aos="fade-up" href="{% url 'results' %}" class="btn-get-started scrollto">Results</a> -->
                 </div>
         </section>
         <!-- End Hero -->
@@ -134,9 +132,9 @@
             <div class='row'>
                 
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/ill1.png'>
+                    <img class="img-fluid" data-aos="fade-right" src='../media/images/eSummit/ill1.png'>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-left"> 
                     <h3>Event 1</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the i
@@ -194,7 +192,7 @@
     <div class='second'>
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <h3>Event 2</h3>
                     <i class="icofont-ui-calendar icofont-2x"></i> 29th February, 2021<br>
                     <i class="icofont-wall-clock icofont-2x"></i> 3:00 pm
@@ -247,7 +245,7 @@
                     </div>
                 </div>
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
             </div>
             
@@ -272,10 +270,10 @@
         </div>
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-left">
                     <h3 >Event 3</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p>
@@ -333,7 +331,7 @@
     <div class='fourth'>
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <h3>Event 4</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p>
@@ -384,7 +382,7 @@
                     </div>
                 </div>
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
             </div>
             
@@ -410,10 +408,10 @@
               
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-left">
                     <h3>Event 5</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p >
@@ -473,7 +471,7 @@
     <div class='sixth'>   
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <h3>Event 6</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p>
@@ -524,7 +522,7 @@
                     </div>
                 </div>
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid" src='../media/images/eSummit/ill1.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
             </div>
             
@@ -550,10 +548,10 @@
               
         <div class="container">
             <div class='row'>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-right">
                     <img class="img-fluid" src='../media/images/eSummit/ill1.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6'>
+                <div class='col-md-6' data-aos="fade-left">
                     <h3>Event 7</h3>
                     <h5>When & Where? 5th April, 2021 & Online</h5> 
                     <p >
@@ -858,7 +856,9 @@
     <!-- Template Main JS File -->
     <script src="{% static 'scripts/script/main-index.js' %}"></script>
         
-
+    <script>
+        AOS.init();
+      </script>
     
     <!-- <script src="index.js"></script> -->
     <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>

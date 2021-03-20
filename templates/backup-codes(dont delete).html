@@ -1253,3 +1253,66 @@
               </div>
               {% endfor %}
               <!--End Team Member-->
+
+
+
+<!-- {% else %} -->
+
+    <!--UNCOMMENT BELOW CODE FOR 2ND FORM-->
+    <!-- <div id="particles-js"></div>
+    <div class='form1'>
+        <div class='container'>
+            <div class='row'>
+                <div class='col-md-6'>
+                    <img src='../media/images/eSummit/ill1.png' class='img-fluid'>
+                </div>
+                <div class='col-md-6'>
+                    <div style="padding:30px 30px; border: 5px solid #CCEBFF; border-radius: 24px;">
+                        <form action="/eSummitRegistration/{{eventId}}" method="POST">
+                            {% csrf_token %}
+                            <center><h4 style="color:white">{{eventName}}</h4></center><br>
+                            <div class="form-group">
+                                <label for="nameOfTeam">Team Name:</label>
+                                <input type="text" class="form-control" id="nameOfTeam" name="nameOfTeam" placeholder="Enter Your Team Name" maxlength="50" required>
+                            </div>
+                            <div class="form-group form-group-inline">
+                                <label for="leaderName">Team Leader Name:</label>
+                                <input type="text" class="form-control" id="leaderName" name="leaderName" placeholder="Enter Group Leader Name..." maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="leaderEmail">Team Leader Email:</label>
+                                <input type="email" class="form-control" id="leaderEmail" name="leaderEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="leaderContact">Team Leader Contact:</label>
+                                <input class="form-control" id="leaderContact" name="leaderContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="Hcollege">College Name:</label>
+                                <input type="text" class="form-control" id="Hcollege" name="Hcollege" placeholder="Enter College Name..." maxlength="50" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="altEmail">Alternate Email ID:</label>
+                                <input type="email" class="form-control" id="altEmail" name="alternateEmail" placeholder="abc@example.com" aria-describedby="emailHelp" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="altContact">Alternate Contact:</label>
+                                <input class="form-control" id="altContact" name="alternateContact" type="tel" placeholder="Enter a 10 digit mobile number" pattern="[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="nameOfMembers">Name of Team Members:</label>
+                                <input type="text" class="form-control" id="nameOfMembers" name="nameOfMembers" placeholder="Names should be comma separated..." required>
+                            </div>
+                            <div class='d-flex justify-content-center'>
+                                <button  type="submit" class="btn btn-seemore ">Register</button>
+                                <button type='reset' class='btn'>Reset</button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                </div>
+            </div>
+            </div>
+    </div> -->
+        
+    <!-- {% endif %} -->
