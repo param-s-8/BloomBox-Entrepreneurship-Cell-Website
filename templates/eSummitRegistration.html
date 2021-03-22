@@ -28,7 +28,8 @@
     }
 
     .btn:hover {
-        background: #414141;
+        background: #2c2c2c;
+        color:white;
     }
 
     @media only screen and (max-width:768px){
@@ -56,20 +57,38 @@
         background-repeat: no-repeat;
         z-index: -1;
     }
+
+    h4{
+        color:black;
+        background-color: white;
+        border-radius: 25px;
+        width: 300px;
+        height: 40px;
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+    .form-group input{
+       /* border:0px;
+        border-radius: 0px;
+        border-bottom: 1px solid white;*/
+        background-color: rgba(0,0,0,0) !important;
+        color:white !important;
+    }
     </style>
 </head>
 <body>
     
         <div id="particles-js"></div>
         <div class='container'>
-            <br><br><br><br>
+            <br><br><br>
             <div class='row'>
-                <div class='col-md-6'>
+                <!-- <div class='col-md-6'>
                     <img src='../media/images/eSummit/ill1.png' class='img-fluid illu'>
-                </div>
-                <div class='col-md-6'>
-                    <div style="padding:30px 30px; border: 5px solid white; border-radius: 24px;">
-                        <center><h4 style="color:white">{{eventName}}</h4></center><br>
+                </div> -->
+                <div class='col-md-6' style="margin:auto;">
+                    <div>
+                        <center><h4>{{eventName}}</h4></center><br>
                         <form action="/eSummitRegistration/{{eventId}}" method="POST">
                         {% csrf_token %}
                             {% if eventType == 1 %}

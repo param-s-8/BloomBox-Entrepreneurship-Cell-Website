@@ -96,7 +96,7 @@ def eSummit(request):
 
 def eSummitRegistration(request, eventId):
     if (eventId >=1 and eventId <=7):
-        eventMappings = {1:'speaker session',2:'crypto',3:'finance session',4:'ennovate',5:'Treasure Hunt',6:'Social Event',7:'Ideation'}
+        eventMappings = {1:'Speaker Session',2:'Crypto',3:'Finance Session',4:'Ennovate',5:'BizQuiz',6:'Rising Entrepreneur',7:'Ideathon'}
         if request.method == "POST":
             eventName = eventMappings.get(eventId)
             if(eventId <= 3):
