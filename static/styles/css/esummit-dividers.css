@@ -26,6 +26,14 @@
     padding-bottom:10%;
 }
 
+@media (max-width: 767px) {
+    .first .container, .second .container, .third .container , .faqs .container, 
+    .fourth .container, .fifth .container, .sixth .container, .seventh .container, .sponsors .container{
+    padding-top: 20%;
+    padding-bottom:20%;
+}
+}
+
 .first .btn:hover, .third .btn:hover, .fifth .btn:hover, .seventh .btn:hover{
     background-color: rgb(143, 143, 143);
     color: black;
