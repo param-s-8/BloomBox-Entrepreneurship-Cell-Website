@@ -96,10 +96,10 @@ def eSummit(request):
 
 def eSummitRegistration(request, eventId):
     if (eventId >=1 and eventId <=7):
-        eventMappings = {1:'Speaker Session',2:'Crypto',3:'Finance Session',4:'Ennovate',5:'BizQuiz',6:'Rising Entrepreneur',7:'Ideathon'}
+        eventMappings = {1:'Ennovate', 2:'Zero to Hero - A Success Story',3:'Ideathon',4:'BizQuiz',5:'Rising Entrepreneur',6:'Financial Planning in Student Life',7:'Mock Crypto Trading Contest'}
         if request.method == "POST":
             eventName = eventMappings.get(eventId)
-            if(eventId <= 3):
+            if(eventId in [2,6,7]):
                 email=request.POST["email"]
                 name=request.POST["name"]
                 contact=request.POST["contact"]
@@ -121,7 +121,7 @@ def eSummitRegistration(request, eventId):
                 esummit_var.save()
             return render(request,'eSummit.html')
         else:
-            if(eventId <= 3):
+            if(eventId in [2,6,7]):
                 eventType=1
             else:
                 eventType=2
