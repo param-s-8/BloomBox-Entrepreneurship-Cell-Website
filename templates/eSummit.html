@@ -37,6 +37,17 @@
     
     
     <style>
+        .event-info{
+            margin-top: 60px;
+            font-size: 18px;
+        }
+        .badge-info{
+            height:30px;
+            font-size: 15px;
+            padding:7px 18px;
+            margin-left: -3px;
+        }
+
         .modal-header{
             background-color: black;
             border-top-left-radius: 10px;
@@ -45,8 +56,6 @@
         .modal-body{
             position: relative;
         }
-        
-
         .shape-divi-modal .shape-fill {
             fill: #000000;
         }
@@ -68,6 +77,21 @@
         .modal-title{
             color: white;
         }
+
+        @media (max-width:400px) {
+            .banner-logo{
+                width:250px;
+            }
+            .event-img{
+                margin-left:18px;
+                height:300px !important;
+                width: 300px !important;
+            }
+            .event-info{
+                font-size: 16px;
+            }
+        }
+
     </style>
 </head>
 <body>
@@ -76,7 +100,7 @@
         <section id="hero">
             <div class="hero-container">
                     <a href="/" class="hero-logo" data-aos="zoom-in">
-                        <img class='img-fluid' src="../media/images/eSummit/esummit-logo-white.png" alt="">
+                        <img class='img-fluid .banner-logo' src="../media/images/eSummit/esummit-logo-white.png" alt="">
                     </a>
                     <h1 data-aos="zoom-in">By BloomBox 2020-21</h1>
                     <h2 data-aos="fade-up">
@@ -131,12 +155,12 @@
             </div></center><br><br>
             <div class='row'>
                 <div class='col-md-6'>
-                    <img class="img-fluid" data-aos="fade-right" src='../media/images/eSummit/illustrations/Ennovate Final.png'>
+                    <img class="img-fluid event-img" data-aos="fade-right" src='../media/images/eSummit/illustrations/Ennovate Final.png'>
                 </div>
-                <div class='col-md-6' data-aos="fade-left"> 
-                    <h3>Ennovate</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p>The flagship event of BloomBox, Ennovate is the highlight of the E-Summit, 
+                <div class='col-md-6 event-info' data-aos="fade-left"> 
+                    <h3>Ennovate &nbsp;<span class="badge badge-pill badge-danger" style="font-size: 18px; padding:3px 10px 4px 10px;">Flagship</span></h3>
+                    
+                    <p style="margin-top:10px">The flagship event of BloomBox, Ennovate is the highlight of the E-Summit, 
                         but this time it has a different touch to it. Participants in this competition 
                         will be given domains to sink in and come up with an ideal business model that 
                         will revolutionize the functioning of that domain and add value to it by making 
@@ -228,12 +252,11 @@
     <div class='second'>
         <div class="container">
             <div class='row'>
-                <div class='col-md-6' data-aos="fade-right">
+                <div class='col-md-6 event-info' data-aos="fade-right">
                     <h3>Zero to Hero - A Success Story</h3>
-                    <i class="icofont-ui-calendar icofont-2x"></i> 29th February, 2021<br>
-                    <i class="icofont-wall-clock icofont-2x"></i> 3:00 pm
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p >
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;24th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;11:00 am</span>
+                    <p style="margin-top:10px">
                         An interesting webinar for aspiring entrepreneurs mind you, not just aspiring 
                         entrepreneurs but for people who aspire to greatness, who aspire to do things in life 
                         that no one else dares to. The session will sure have a business aspect to it but it will
@@ -246,7 +269,7 @@
                     <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal2">Know More</button>
                 </div>
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/Zero to Hero Final.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Zero to Hero Final.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModal2Label" aria-hidden="true">
@@ -325,12 +348,13 @@
         <div class="container">
             <div class='row'>
                 <div class='col-md-6' data-aos="fade-right">
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/Ideathon Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Ideathon Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6' data-aos="fade-left">
+                <div class='col-md-6 event-info' data-aos="fade-left">
                     <h3>Ideathon</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;24th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;2:00 pm</span>
+                    <p style="margin-top:10px">
                         Ideathon is a two day long competition where participants will be provided with 
                         problem statements which will be revolving around ideas that are usually very 
                         convenient but could be more efficient with a touch of innovation; the birthplace 
@@ -424,10 +448,11 @@
     <div class='fourth'>
         <div class="container">
             <div class='row'>
-                <div class='col-md-6' data-aos="fade-right">
+                <div class='col-md-6 event-info' data-aos="fade-right">
                     <h3>BizQuiz</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;24th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;6:00 pm</span>
+                    <p style="margin-top:10px">
                         BloomBox as a part of the E-Summit
                         has come up with a Fun Learning and Informal Event where the
                         Participants compete against each other based on their Business
@@ -441,7 +466,7 @@
                     <button type='button' class='btn' data-toggle="modal" data-target="#exampleModal4">Know More</button>
                 </div>
                 <div class='col-md-6'>
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/BizQuiz Final.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/BizQuiz Final.png' data-aos="fade-left" style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModal4Label" aria-hidden="true">
@@ -544,12 +569,13 @@
         <div class="container">
             <div class='row'>
                 <div class='col-md-6' data-aos="fade-right">
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/Social Event Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid event-img" src='../media/images/eSummit/illustrations/Social Event Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6' data-aos="fade-left">
+                <div class='col-md-6 event-info' data-aos="fade-left">
                     <h3>Rising Entrepreneur</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p>A competition for a cause. Unlike other competitions where the participation is for winning 
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;24th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;4:00 pm</span>
+                    <p style="margin-top:10px">A competition for a cause. Unlike other competitions where the participation is for winning 
                         and gaining experience this competition will promote, encourage and foster the idea of social
                          entrepreneurship which is defined as an approach by individuals, groups, start-up companies or
                           entrepreneurs, in which they develop, fund and implement solutions to social, cultural, or 
@@ -653,10 +679,11 @@
     <div class='sixth'>   
         <div class="container">
             <div class='row'>
-                <div class='col-md-6' data-aos="fade-right">
+                <div class='col-md-6 event-info' data-aos="fade-right">
                     <h3>Financial Planning in Student Life</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p>
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;25th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;4:00 pm</span>
+                    <p style="margin-top:10px">
                         A webinar that shows how financial planning helps the student see the world for what it is, 
                         and that is, to always live according to their means. The session will emphasize on how planning 
                         early or how just being financially educated early in life will take you places. There is this 
@@ -670,7 +697,7 @@
                     
                 </div>
                 <div class='col-md-6' data-aos="fade-left">
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/Personal Finance Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Personal Finance Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
                 <!-- Modal -->
                 <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModal6Label" aria-hidden="true">
@@ -754,12 +781,13 @@
         <div class="container">
             <div class='row'>
                 <div class='col-md-6' data-aos="fade-right">
-                    <img class="img-fluid" src='../media/images/eSummit/illustrations/Crypto Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
+                    <img class="img-fluid  event-img" src='../media/images/eSummit/illustrations/Crypto Final.png' style='height: 500px; width: 500px; position: absolue; z-index: -1;'>
                 </div>
-                <div class='col-md-6' data-aos="fade-left">
+                <div class='col-md-6 event-info' data-aos="fade-left">
                     <h3>Mock Crypto Trading Contest</h3>
-                    <h5>When & Where? 5th April, 2021 & Online</h5> 
-                    <p >
+                    <span class="badge badge-pill badge-info"><i class="icofont-ui-calendar icofont-1x"></i> &nbsp;24th April, 2021</span>&nbsp;&nbsp;
+                    <span class="badge badge-pill badge-info"><i class="icofont-wall-clock icofont-1x"></i> &nbsp;3:00 pm</span>
+                    <p style="margin-top:10px">
                         An event that will introduce you to the next big thing so that you don’t get left 
                         behind in the race of being the next global leader. Cryptocurrency trading will not 
                         only educate you about the fundamentals of cryptocurrency but will also aim to make 
