@@ -90,7 +90,7 @@
                 <div class='col-md-6' style="margin:auto;">
                     <div>
                         <center><h4>{{eventName}}</h4></center><br>
-                        <form action="/eSummitRegistration/{{eventId}}" method="POST">
+                        <form action="/ESummitRegistration/{{eventId}}" method="POST">
                         {% csrf_token %}
                             {% if eventType == 1 %}
                                 <div class="form-group form-group-inline">
