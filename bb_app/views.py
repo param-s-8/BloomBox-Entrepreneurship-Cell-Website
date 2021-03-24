@@ -94,7 +94,7 @@ def about(request):
 def ESummit(request):
     return render(request,'eSummit.html')
 
-def ESummitRegistration(request, eventId):
+def eSummitRegistration(request, eventId):
     if (eventId >=1 and eventId <=7):
         eventMappings = {1:'Ennovate', 2:'Zero to Hero - A Success Story',3:'Ideathon',4:'E-Chase',5:'Rising Entrepreneur',6:'Financial Planning in Student Life',7:'Mock Crypto Trading Contest'}
         if request.method == "POST":
