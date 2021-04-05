@@ -108,6 +108,7 @@ def eSummitRegistration(request, eventId):
                 year=request.POST["year"]
                 esummit_var=ESummitRegistration.objects.create(email=email,eventId=eventId, eventName=eventName, name=name, contact=contact, college=college, branch=branch, year=year)
                 esummit_var.save()
+                reg_conf = "Thank you " + str(name) + ". You have been registered for " + str(eventName)
             else:
                 nameOfTeam=request.POST["nameOfTeam"]
                 leaderEmail=request.POST["leaderEmail"]
@@ -119,14 +120,21 @@ def eSummitRegistration(request, eventId):
                 nameOfMembers=request.POST["nameOfMembers"]
                 esummit_var=ESummitRegistrationHackathon.objects.create(eventId=eventId, eventName=eventName,nameOfTeam=nameOfTeam,leaderEmail=leaderEmail,leaderName=leaderName,leaderContact=leaderContact,college=college,alternateEmail=alternateEmail,alternateContact=alternateContact,nameOfMembers=nameOfMembers)
                 esummit_var.save()
-            return render(request,'eSummit.html')
+                reg_conf = "Thank you " + str(leaderName) + ". You have been registered for " + str(eventName)
+            if(eventId in [2,6,7]):
+                eventType=1
+            else:
+                eventType=2
+            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName, 'reg_conf':reg_conf}
+            return render(request,'eSummitRegistration.html',context)
         else:
             if(eventId in [2,6,7]):
                 eventType=1
             else:
                 eventType=2
+            reg_conf = ""
             eventName = eventMappings.get(eventId)
-            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName}
+            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName, 'reg_conf':reg_conf}
             return render(request, 'eSummitRegistration.html', context)
     else:
         return render(request, 'eSummit.html')
