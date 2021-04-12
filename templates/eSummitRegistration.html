@@ -92,6 +92,16 @@
                             font-size: 17px;
                             padding: 6px 8px;">{{ reg_conf }}</div></center><br>
             {% endif %}
+            {% if eventId == 1 %}
+            <center><div style="color:white;
+                background-color: green;
+                            border-radius: 25px;
+                            width: fit-content;
+                            height: fit-content;
+                            font-size: 17px;
+                            padding: 6px 8px;
+                            margin-top: 20%;">Sorry! The registration for this event is closed</div></center><br>
+            {% else %}
             <div class='row'>
                 <!-- <div class='col-md-6'>
                     <img src='../media/images/eSummit/ill1.png' class='img-fluid illu'>
@@ -169,6 +179,7 @@
                     </div>
                 </div>
             </div>
+        {% endif %}
         </div>
 
     <script src='https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js'></script>
