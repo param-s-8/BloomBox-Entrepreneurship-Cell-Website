@@ -134,7 +134,8 @@ def eSummitRegistration(request, eventId):
                 eventType=2
             reg_conf = ""
             eventName = eventMappings.get(eventId)
-            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName, 'reg_conf':reg_conf}
+            closed_events = [1,2,3,4,5,6]
+            context={'eventId':eventId, 'eventType':eventType, 'eventName':eventName, 'reg_conf':reg_conf, 'closed_events':closed_events }
             return render(request, 'eSummitRegistration.html', context)
     else:
         return render(request, 'eSummit.html')
